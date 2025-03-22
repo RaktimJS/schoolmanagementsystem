@@ -1,0 +1,2457 @@
+{
+        "stud1": {
+                "Roll_No": 1,
+                "IsDeleted": "False",
+                "Name": "Student 1",
+                "Subjects": {
+                        "HINDI CORE": {
+                                "FA 1": 81,
+                                "FA 2": 99,
+                                "SA 1": 77,
+                                "FA 3": 78,
+                                "FA 4": 85,
+                                "SA 2": 71
+                        },
+                        "GERMAN": {
+                                "FA 1": 95,
+                                "FA 2": 72,
+                                "SA 1": 73,
+                                "FA 3": 93,
+                                "FA 4": 81,
+                                "SA 2": 70
+                        },
+                        "PHYSICAL EDUCATION": {
+                                "FA 1": 73,
+                                "FA 2": 74,
+                                "SA 1": 79,
+                                "FA 3": 93,
+                                "FA 4": 76,
+                                "SA 2": 98
+                        },
+                        "LIMBOO": {
+                                "FA 1": 93,
+                                "FA 2": 77,
+                                "SA 1": 91,
+                                "FA 3": 81,
+                                "FA 4": 89,
+                                "SA 2": 90
+                        },
+                        "KANNADA": {
+                                "FA 1": 85,
+                                "FA 2": 98,
+                                "SA 1": 93,
+                                "FA 3": 91,
+                                "FA 4": 72,
+                                "SA 2": 74
+                        },
+                        "URDU ELECTIVE": {
+                                "FA 1": 100,
+                                "FA 2": 95,
+                                "SA 1": 92,
+                                "FA 3": 85,
+                                "FA 4": 74,
+                                "SA 2": 72
+                        },
+                        "CHEMISTRY": {
+                                "FA 1": 73,
+                                "FA 2": 76,
+                                "SA 1": 100,
+                                "FA 3": 70,
+                                "FA 4": 78,
+                                "SA 2": 79
+                        },
+                        "ASSAMESE": {
+                                "FA 1": 72,
+                                "FA 2": 73,
+                                "SA 1": 80,
+                                "FA 3": 85,
+                                "FA 4": 100,
+                                "SA 2": 86
+                        },
+                        "GUJARATI": {
+                                "FA 1": 80,
+                                "FA 2": 79,
+                                "SA 1": 81,
+                                "FA 3": 77,
+                                "FA 4": 83,
+                                "SA 2": 70
+                        },
+                        "CARNATIC PERCUSSION": {
+                                "FA 1": 85,
+                                "FA 2": 77,
+                                "SA 1": 98,
+                                "FA 3": 71,
+                                "FA 4": 89,
+                                "SA 2": 89
+                        },
+                        "ODIA": {
+                                "FA 1": 88,
+                                "FA 2": 81,
+                                "SA 1": 83,
+                                "FA 3": 88,
+                                "FA 4": 98,
+                                "SA 2": 84
+                        }
+                }
+        },
+        "stud2": {
+                "Roll_No": 2,
+                "IsDeleted": "False",
+                "Name": "Student 2",
+                "Subjects": {
+                        "PUNJABI": {
+                                "FA 1": 75,
+                                "FA 2": 70,
+                                "SA 1": 92,
+                                "FA 3": 97,
+                                "FA 4": 92,
+                                "SA 2": 100
+                        },
+                        "GERMAN": {
+                                "FA 1": 86,
+                                "FA 2": 98,
+                                "SA 1": 88,
+                                "FA 3": 84,
+                                "FA 4": 79,
+                                "SA 2": 97
+                        },
+                        "TIBETAN": {
+                                "FA 1": 73,
+                                "FA 2": 85,
+                                "SA 1": 82,
+                                "FA 3": 92,
+                                "FA 4": 76,
+                                "SA 2": 96
+                        },
+                        "KOKBOROK": {
+                                "FA 1": 75,
+                                "FA 2": 81,
+                                "SA 1": 81,
+                                "FA 3": 72,
+                                "FA 4": 78,
+                                "SA 2": 96
+                        },
+                        "COMPUTER SCIENCE": {
+                                "FA 1": 70,
+                                "FA 2": 71,
+                                "SA 1": 89,
+                                "FA 3": 84,
+                                "FA 4": 100,
+                                "SA 2": 86
+                        },
+                        "MALAYALAM": {
+                                "FA 1": 99,
+                                "FA 2": 87,
+                                "SA 1": 83,
+                                "FA 3": 86,
+                                "FA 4": 73,
+                                "SA 2": 97
+                        }
+                }
+        },
+        "stud3": {
+                "Roll_No": 3,
+                "IsDeleted": "False",
+                "Name": "Student 3",
+                "Subjects": {
+                        "TELUGU AP": {
+                                "FA 1": 89,
+                                "FA 2": 87,
+                                "SA 1": 84,
+                                "FA 3": 99,
+                                "FA 4": 94,
+                                "SA 2": 71
+                        },
+                        "FRENCH": {
+                                "FA 1": 84,
+                                "FA 2": 84,
+                                "SA 1": 84,
+                                "FA 3": 89,
+                                "FA 4": 74,
+                                "SA 2": 89
+                        },
+                        "LEGAL STUDIES": {
+                                "FA 1": 71,
+                                "FA 2": 77,
+                                "SA 1": 96,
+                                "FA 3": 97,
+                                "FA 4": 82,
+                                "SA 2": 70
+                        },
+                        "MARATHI": {
+                                "FA 1": 98,
+                                "FA 2": 96,
+                                "SA 1": 91,
+                                "FA 3": 86,
+                                "FA 4": 79,
+                                "SA 2": 91
+                        },
+                        "ASSAMESE": {
+                                "FA 1": 76,
+                                "FA 2": 100,
+                                "SA 1": 75,
+                                "FA 3": 73,
+                                "FA 4": 98,
+                                "SA 2": 78
+                        },
+                        "APPLIED MATHEMATICS": {
+                                "FA 1": 73,
+                                "FA 2": 93,
+                                "SA 1": 80,
+                                "FA 3": 85,
+                                "FA 4": 90,
+                                "SA 2": 72
+                        },
+                        "HINDI CORE": {
+                                "FA 1": 73,
+                                "FA 2": 90,
+                                "SA 1": 76,
+                                "FA 3": 84,
+                                "FA 4": 86,
+                                "SA 2": 76
+                        },
+                        "PUNJABI": {
+                                "FA 1": 79,
+                                "FA 2": 87,
+                                "SA 1": 92,
+                                "FA 3": 99,
+                                "FA 4": 100,
+                                "SA 2": 80
+                        },
+                        "TIBETAN": {
+                                "FA 1": 75,
+                                "FA 2": 94,
+                                "SA 1": 72,
+                                "FA 3": 81,
+                                "FA 4": 85,
+                                "SA 2": 93
+                        },
+                        "BUSINESS STUDIES": {
+                                "FA 1": 71,
+                                "FA 2": 88,
+                                "SA 1": 73,
+                                "FA 3": 72,
+                                "FA 4": 74,
+                                "SA 2": 100
+                        },
+                        "INFORMATICS PRACTICES": {
+                                "FA 1": 90,
+                                "FA 2": 97,
+                                "SA 1": 85,
+                                "FA 3": 91,
+                                "FA 4": 88,
+                                "SA 2": 93
+                        },
+                        "URDU ELECTIVE": {
+                                "FA 1": 97,
+                                "FA 2": 81,
+                                "SA 1": 81,
+                                "FA 3": 96,
+                                "FA 4": 84,
+                                "SA 2": 71
+                        }
+                }
+        },
+        "stud4": {
+                "Roll_No": 4,
+                "IsDeleted": "False",
+                "Name": "Student 4",
+                "Subjects": {
+                        "BODO": {
+                                "FA 1": 92,
+                                "FA 2": 90,
+                                "SA 1": 83,
+                                "FA 3": 81,
+                                "FA 4": 85,
+                                "SA 2": 89
+                        },
+                        "SPANISH": {
+                                "FA 1": 76,
+                                "FA 2": 98,
+                                "SA 1": 96,
+                                "FA 3": 97,
+                                "FA 4": 100,
+                                "SA 2": 97
+                        },
+                        "ASSAMESE": {
+                                "FA 1": 75,
+                                "FA 2": 73,
+                                "SA 1": 80,
+                                "FA 3": 96,
+                                "FA 4": 97,
+                                "SA 2": 95
+                        },
+                        "ENGINEERING GRAPHICS": {
+                                "FA 1": 92,
+                                "FA 2": 100,
+                                "SA 1": 83,
+                                "FA 3": 95,
+                                "FA 4": 87,
+                                "SA 2": 92
+                        },
+                        "CHEMISTRY": {
+                                "FA 1": 90,
+                                "FA 2": 88,
+                                "SA 1": 87,
+                                "FA 3": 84,
+                                "FA 4": 93,
+                                "SA 2": 87
+                        },
+                        "TAMIL": {
+                                "FA 1": 93,
+                                "FA 2": 98,
+                                "SA 1": 89,
+                                "FA 3": 99,
+                                "FA 4": 85,
+                                "SA 2": 96
+                        },
+                        "KOKBOROK": {
+                                "FA 1": 91,
+                                "FA 2": 79,
+                                "SA 1": 86,
+                                "FA 3": 74,
+                                "FA 4": 85,
+                                "SA 2": 100
+                        },
+                        "KANNADA": {
+                                "FA 1": 86,
+                                "FA 2": 93,
+                                "SA 1": 91,
+                                "FA 3": 82,
+                                "FA 4": 76,
+                                "SA 2": 89
+                        }
+                }
+        },
+        "stud5": {
+                "Roll_No": 5,
+                "IsDeleted": "False",
+                "Name": "Student 5",
+                "Subjects": {
+                        "BODO": {
+                                "FA 1": 90,
+                                "FA 2": 71,
+                                "SA 1": 74,
+                                "FA 3": 99,
+                                "FA 4": 72,
+                                "SA 2": 75
+                        },
+                        "ENGLISH ELECTIVE": {
+                                "FA 1": 94,
+                                "FA 2": 83,
+                                "SA 1": 100,
+                                "FA 3": 81,
+                                "FA 4": 80,
+                                "SA 2": 96
+                        },
+                        "HINDI ELECTIVE": {
+                                "FA 1": 98,
+                                "FA 2": 87,
+                                "SA 1": 89,
+                                "FA 3": 91,
+                                "FA 4": 87,
+                                "SA 2": 99
+                        },
+                        "TAMIL": {
+                                "FA 1": 71,
+                                "FA 2": 79,
+                                "SA 1": 75,
+                                "FA 3": 100,
+                                "FA 4": 72,
+                                "SA 2": 100
+                        },
+                        "KANNADA": {
+                                "FA 1": 79,
+                                "FA 2": 73,
+                                "SA 1": 95,
+                                "FA 3": 95,
+                                "FA 4": 83,
+                                "SA 2": 83
+                        }
+                }
+        },
+        "stud6": {
+                "Roll_No": 6,
+                "IsDeleted": "False",
+                "Name": "Student 6",
+                "Subjects": {
+                        "TELUGU TELANGANA": {
+                                "FA 1": 71,
+                                "FA 2": 70,
+                                "SA 1": 71,
+                                "FA 3": 86,
+                                "FA 4": 82,
+                                "SA 2": 98
+                        },
+                        "JAPANESE": {
+                                "FA 1": 78,
+                                "FA 2": 79,
+                                "SA 1": 71,
+                                "FA 3": 78,
+                                "FA 4": 97,
+                                "SA 2": 93
+                        },
+                        "FRENCH": {
+                                "FA 1": 95,
+                                "FA 2": 86,
+                                "SA 1": 94,
+                                "FA 3": 77,
+                                "FA 4": 85,
+                                "SA 2": 93
+                        },
+                        "PERSIAN": {
+                                "FA 1": 88,
+                                "FA 2": 81,
+                                "SA 1": 97,
+                                "FA 3": 88,
+                                "FA 4": 96,
+                                "SA 2": 76
+                        },
+                        "MIZO": {
+                                "FA 1": 97,
+                                "FA 2": 82,
+                                "SA 1": 93,
+                                "FA 3": 81,
+                                "FA 4": 74,
+                                "SA 2": 74
+                        },
+                        "ENGLISH CORE": {
+                                "FA 1": 76,
+                                "FA 2": 95,
+                                "SA 1": 78,
+                                "FA 3": 83,
+                                "FA 4": 70,
+                                "SA 2": 72
+                        }
+                }
+        },
+        "stud7": {
+                "Roll_No": 7,
+                "IsDeleted": "False",
+                "Name": "Student 7",
+                "Subjects": {
+                        "BENGALI": {
+                                "FA 1": 95,
+                                "FA 2": 83,
+                                "SA 1": 91,
+                                "FA 3": 73,
+                                "FA 4": 84,
+                                "SA 2": 75
+                        },
+                        "JAPANESE": {
+                                "FA 1": 92,
+                                "FA 2": 94,
+                                "SA 1": 89,
+                                "FA 3": 95,
+                                "FA 4": 70,
+                                "SA 2": 77
+                        },
+                        "CARNATIC PERCUSSION": {
+                                "FA 1": 83,
+                                "FA 2": 81,
+                                "SA 1": 96,
+                                "FA 3": 78,
+                                "FA 4": 80,
+                                "SA 2": 74
+                        },
+                        "DANCE": {
+                                "FA 1": 82,
+                                "FA 2": 94,
+                                "SA 1": 92,
+                                "FA 3": 96,
+                                "FA 4": 78,
+                                "SA 2": 89
+                        },
+                        "ECONOMICS": {
+                                "FA 1": 72,
+                                "FA 2": 70,
+                                "SA 1": 94,
+                                "FA 3": 90,
+                                "FA 4": 82,
+                                "SA 2": 82
+                        },
+                        "MANIPURI": {
+                                "FA 1": 94,
+                                "FA 2": 75,
+                                "SA 1": 92,
+                                "FA 3": 70,
+                                "FA 4": 80,
+                                "SA 2": 98
+                        },
+                        "HINDUSTANI MELODIC": {
+                                "FA 1": 78,
+                                "FA 2": 70,
+                                "SA 1": 81,
+                                "FA 3": 84,
+                                "FA 4": 74,
+                                "SA 2": 94
+                        },
+                        "SANSKRIT ELECTIVE": {
+                                "FA 1": 97,
+                                "FA 2": 83,
+                                "SA 1": 79,
+                                "FA 3": 75,
+                                "FA 4": 70,
+                                "SA 2": 78
+                        },
+                        "HINDI CORE": {
+                                "FA 1": 88,
+                                "FA 2": 98,
+                                "SA 1": 100,
+                                "FA 3": 88,
+                                "FA 4": 100,
+                                "SA 2": 100
+                        },
+                        "SINDHI": {
+                                "FA 1": 74,
+                                "FA 2": 99,
+                                "SA 1": 74,
+                                "FA 3": 89,
+                                "FA 4": 85,
+                                "SA 2": 100
+                        },
+                        "NCC": {
+                                "FA 1": 90,
+                                "FA 2": 73,
+                                "SA 1": 96,
+                                "FA 3": 72,
+                                "FA 4": 100,
+                                "SA 2": 92
+                        }
+                }
+        },
+        "stud8": {
+                "Roll_No": 8,
+                "IsDeleted": "False",
+                "Name": "Student 8",
+                "Subjects": {
+                        "BHUTIA": {
+                                "FA 1": 89,
+                                "FA 2": 90,
+                                "SA 1": 83,
+                                "FA 3": 92,
+                                "FA 4": 100,
+                                "SA 2": 83
+                        },
+                        "ENGLISH CORE": {
+                                "FA 1": 94,
+                                "FA 2": 88,
+                                "SA 1": 85,
+                                "FA 3": 73,
+                                "FA 4": 89,
+                                "SA 2": 72
+                        },
+                        "BIO TECHNOLOGY": {
+                                "FA 1": 99,
+                                "FA 2": 82,
+                                "SA 1": 72,
+                                "FA 3": 71,
+                                "FA 4": 85,
+                                "SA 2": 79
+                        },
+                        "LEPCHA": {
+                                "FA 1": 75,
+                                "FA 2": 75,
+                                "SA 1": 72,
+                                "FA 3": 90,
+                                "FA 4": 92,
+                                "SA 2": 99
+                        },
+                        "ACCOUNTANCY": {
+                                "FA 1": 88,
+                                "FA 2": 92,
+                                "SA 1": 89,
+                                "FA 3": 71,
+                                "FA 4": 94,
+                                "SA 2": 78
+                        },
+                        "PUNJABI": {
+                                "FA 1": 84,
+                                "FA 2": 95,
+                                "SA 1": 83,
+                                "FA 3": 72,
+                                "FA 4": 77,
+                                "SA 2": 94
+                        },
+                        "ENGLISH ELECTIVE": {
+                                "FA 1": 95,
+                                "FA 2": 77,
+                                "SA 1": 92,
+                                "FA 3": 85,
+                                "FA 4": 79,
+                                "SA 2": 92
+                        }
+                }
+        },
+        "stud9": {
+                "Roll_No": 9,
+                "IsDeleted": "False",
+                "Name": "Student 9",
+                "Subjects": {
+                        "LEPCHA": {
+                                "FA 1": 75,
+                                "FA 2": 75,
+                                "SA 1": 91,
+                                "FA 3": 86,
+                                "FA 4": 73,
+                                "SA 2": 82
+                        },
+                        "ENGLISH CORE": {
+                                "FA 1": 87,
+                                "FA 2": 72,
+                                "SA 1": 73,
+                                "FA 3": 97,
+                                "FA 4": 87,
+                                "SA 2": 85
+                        },
+                        "KANNADA": {
+                                "FA 1": 70,
+                                "FA 2": 92,
+                                "SA 1": 74,
+                                "FA 3": 80,
+                                "FA 4": 96,
+                                "SA 2": 87
+                        },
+                        "JAPANESE": {
+                                "FA 1": 76,
+                                "FA 2": 81,
+                                "SA 1": 97,
+                                "FA 3": 96,
+                                "FA 4": 87,
+                                "SA 2": 74
+                        },
+                        "ACCOUNTANCY": {
+                                "FA 1": 96,
+                                "FA 2": 90,
+                                "SA 1": 77,
+                                "FA 3": 77,
+                                "FA 4": 79,
+                                "SA 2": 83
+                        },
+                        "COMPUTER SCIENCE": {
+                                "FA 1": 83,
+                                "FA 2": 97,
+                                "SA 1": 70,
+                                "FA 3": 72,
+                                "FA 4": 96,
+                                "SA 2": 81
+                        },
+                        "BHUTIA": {
+                                "FA 1": 95,
+                                "FA 2": 77,
+                                "SA 1": 71,
+                                "FA 3": 98,
+                                "FA 4": 94,
+                                "SA 2": 98
+                        },
+                        "BIOLOGY": {
+                                "FA 1": 76,
+                                "FA 2": 76,
+                                "SA 1": 86,
+                                "FA 3": 77,
+                                "FA 4": 81,
+                                "SA 2": 91
+                        },
+                        "ODIA": {
+                                "FA 1": 92,
+                                "FA 2": 100,
+                                "SA 1": 93,
+                                "FA 3": 100,
+                                "FA 4": 95,
+                                "SA 2": 71
+                        },
+                        "MARATHI": {
+                                "FA 1": 81,
+                                "FA 2": 94,
+                                "SA 1": 87,
+                                "FA 3": 100,
+                                "FA 4": 73,
+                                "SA 2": 75
+                        },
+                        "INFORMATICS PRACTICES": {
+                                "FA 1": 97,
+                                "FA 2": 94,
+                                "SA 1": 87,
+                                "FA 3": 93,
+                                "FA 4": 76,
+                                "SA 2": 73
+                        },
+                        "ENTREPRENEURSHIP": {
+                                "FA 1": 84,
+                                "FA 2": 73,
+                                "SA 1": 79,
+                                "FA 3": 95,
+                                "FA 4": 76,
+                                "SA 2": 73
+                        }
+                }
+        },
+        "stud10": {
+                "Roll_No": 10,
+                "IsDeleted": "False",
+                "Name": "Student 10",
+                "Subjects": {
+                        "ODIA": {
+                                "FA 1": 96,
+                                "FA 2": 75,
+                                "SA 1": 82,
+                                "FA 3": 82,
+                                "FA 4": 82,
+                                "SA 2": 89
+                        },
+                        "ENGLISH ELECTIVE": {
+                                "FA 1": 99,
+                                "FA 2": 70,
+                                "SA 1": 94,
+                                "FA 3": 93,
+                                "FA 4": 91,
+                                "SA 2": 73
+                        },
+                        "SANSKRIT CORE": {
+                                "FA 1": 85,
+                                "FA 2": 70,
+                                "SA 1": 91,
+                                "FA 3": 82,
+                                "FA 4": 99,
+                                "SA 2": 99
+                        },
+                        "HINDUSTANI PERCUSSION": {
+                                "FA 1": 70,
+                                "FA 2": 82,
+                                "SA 1": 85,
+                                "FA 3": 93,
+                                "FA 4": 76,
+                                "SA 2": 71
+                        },
+                        "JAPANESE": {
+                                "FA 1": 89,
+                                "FA 2": 81,
+                                "SA 1": 82,
+                                "FA 3": 86,
+                                "FA 4": 74,
+                                "SA 2": 86
+                        },
+                        "ENTREPRENEURSHIP": {
+                                "FA 1": 75,
+                                "FA 2": 72,
+                                "SA 1": 91,
+                                "FA 3": 82,
+                                "FA 4": 95,
+                                "SA 2": 83
+                        },
+                        "KNOWLEDGE TRADITION": {
+                                "FA 1": 72,
+                                "FA 2": 84,
+                                "SA 1": 91,
+                                "FA 3": 81,
+                                "FA 4": 71,
+                                "SA 2": 74
+                        },
+                        "SOCIOLOGY": {
+                                "FA 1": 82,
+                                "FA 2": 75,
+                                "SA 1": 82,
+                                "FA 3": 76,
+                                "FA 4": 79,
+                                "SA 2": 74
+                        },
+                        "BENGALI": {
+                                "FA 1": 89,
+                                "FA 2": 71,
+                                "SA 1": 93,
+                                "FA 3": 92,
+                                "FA 4": 91,
+                                "SA 2": 97
+                        },
+                        "TAMIL": {
+                                "FA 1": 100,
+                                "FA 2": 83,
+                                "SA 1": 100,
+                                "FA 3": 70,
+                                "FA 4": 89,
+                                "SA 2": 99
+                        },
+                        "PUNJABI": {
+                                "FA 1": 97,
+                                "FA 2": 83,
+                                "SA 1": 99,
+                                "FA 3": 90,
+                                "FA 4": 81,
+                                "SA 2": 72
+                        }
+                }
+        },
+        "stud11": {
+                "Roll_No": 11,
+                "IsDeleted": "False",
+                "Name": "Student 11",
+                "Subjects": {
+                        "LEPCHA": {
+                                "FA 1": 87,
+                                "FA 2": 100,
+                                "SA 1": 76,
+                                "FA 3": 87,
+                                "FA 4": 99,
+                                "SA 2": 77
+                        },
+                        "PERSIAN": {
+                                "FA 1": 79,
+                                "FA 2": 93,
+                                "SA 1": 92,
+                                "FA 3": 89,
+                                "FA 4": 70,
+                                "SA 2": 94
+                        },
+                        "BIO TECHNOLOGY": {
+                                "FA 1": 87,
+                                "FA 2": 97,
+                                "SA 1": 100,
+                                "FA 3": 74,
+                                "FA 4": 80,
+                                "SA 2": 75
+                        },
+                        "HINDUSTANI PERCUSSION": {
+                                "FA 1": 71,
+                                "FA 2": 73,
+                                "SA 1": 89,
+                                "FA 3": 74,
+                                "FA 4": 87,
+                                "SA 2": 88
+                        },
+                        "CARNATIC VOCAL": {
+                                "FA 1": 73,
+                                "FA 2": 99,
+                                "SA 1": 97,
+                                "FA 3": 93,
+                                "FA 4": 92,
+                                "SA 2": 79
+                        },
+                        "BODO": {
+                                "FA 1": 72,
+                                "FA 2": 84,
+                                "SA 1": 95,
+                                "FA 3": 78,
+                                "FA 4": 85,
+                                "SA 2": 93
+                        },
+                        "PHYSICS": {
+                                "FA 1": 81,
+                                "FA 2": 73,
+                                "SA 1": 78,
+                                "FA 3": 75,
+                                "FA 4": 93,
+                                "SA 2": 72
+                        },
+                        "LIMBOO": {
+                                "FA 1": 73,
+                                "FA 2": 74,
+                                "SA 1": 85,
+                                "FA 3": 71,
+                                "FA 4": 72,
+                                "SA 2": 79
+                        },
+                        "INFORMATICS PRACTICES": {
+                                "FA 1": 80,
+                                "FA 2": 74,
+                                "SA 1": 71,
+                                "FA 3": 90,
+                                "FA 4": 92,
+                                "SA 2": 75
+                        },
+                        "HINDUSTANI VOCAL": {
+                                "FA 1": 80,
+                                "FA 2": 83,
+                                "SA 1": 83,
+                                "FA 3": 95,
+                                "FA 4": 88,
+                                "SA 2": 72
+                        },
+                        "TANGKHUL": {
+                                "FA 1": 91,
+                                "FA 2": 89,
+                                "SA 1": 78,
+                                "FA 3": 88,
+                                "FA 4": 80,
+                                "SA 2": 85
+                        }
+                }
+        },
+        "stud12": {
+                "Roll_No": 12,
+                "IsDeleted": "False",
+                "Name": "Student 12",
+                "Subjects": {
+                        "BHUTIA": {
+                                "FA 1": 78,
+                                "FA 2": 71,
+                                "SA 1": 94,
+                                "FA 3": 75,
+                                "FA 4": 74,
+                                "SA 2": 91
+                        },
+                        "JAPANESE": {
+                                "FA 1": 81,
+                                "FA 2": 76,
+                                "SA 1": 78,
+                                "FA 3": 85,
+                                "FA 4": 72,
+                                "SA 2": 93
+                        },
+                        "POLITICAL SCIENCE": {
+                                "FA 1": 71,
+                                "FA 2": 85,
+                                "SA 1": 89,
+                                "FA 3": 88,
+                                "FA 4": 93,
+                                "SA 2": 71
+                        },
+                        "BODO": {
+                                "FA 1": 71,
+                                "FA 2": 77,
+                                "SA 1": 98,
+                                "FA 3": 89,
+                                "FA 4": 75,
+                                "SA 2": 83
+                        },
+                        "LIMBOO": {
+                                "FA 1": 96,
+                                "FA 2": 95,
+                                "SA 1": 74,
+                                "FA 3": 81,
+                                "FA 4": 70,
+                                "SA 2": 85
+                        },
+                        "SPANISH": {
+                                "FA 1": 86,
+                                "FA 2": 82,
+                                "SA 1": 77,
+                                "FA 3": 72,
+                                "FA 4": 94,
+                                "SA 2": 77
+                        },
+                        "GEOGRAPHY": {
+                                "FA 1": 81,
+                                "FA 2": 99,
+                                "SA 1": 86,
+                                "FA 3": 91,
+                                "FA 4": 98,
+                                "SA 2": 85
+                        },
+                        "MIZO": {
+                                "FA 1": 91,
+                                "FA 2": 82,
+                                "SA 1": 79,
+                                "FA 3": 87,
+                                "FA 4": 98,
+                                "SA 2": 87
+                        }
+                }
+        },
+        "stud13": {
+                "Roll_No": 13,
+                "IsDeleted": "False",
+                "Name": "Student 13",
+                "Subjects": {
+                        "TELUGU AP": {
+                                "FA 1": 72,
+                                "FA 2": 79,
+                                "SA 1": 92,
+                                "FA 3": 87,
+                                "FA 4": 97,
+                                "SA 2": 79
+                        },
+                        "SPANISH": {
+                                "FA 1": 76,
+                                "FA 2": 84,
+                                "SA 1": 89,
+                                "FA 3": 70,
+                                "FA 4": 79,
+                                "SA 2": 86
+                        },
+                        "BUSINESS STUDIES": {
+                                "FA 1": 96,
+                                "FA 2": 94,
+                                "SA 1": 82,
+                                "FA 3": 87,
+                                "FA 4": 83,
+                                "SA 2": 74
+                        },
+                        "GERMAN": {
+                                "FA 1": 83,
+                                "FA 2": 97,
+                                "SA 1": 84,
+                                "FA 3": 71,
+                                "FA 4": 93,
+                                "SA 2": 92
+                        },
+                        "LIMBOO": {
+                                "FA 1": 86,
+                                "FA 2": 87,
+                                "SA 1": 95,
+                                "FA 3": 84,
+                                "FA 4": 70,
+                                "SA 2": 98
+                        },
+                        "HINDUSTANI VOCAL": {
+                                "FA 1": 83,
+                                "FA 2": 92,
+                                "SA 1": 73,
+                                "FA 3": 88,
+                                "FA 4": 90,
+                                "SA 2": 75
+                        },
+                        "HOME SCIENCE": {
+                                "FA 1": 78,
+                                "FA 2": 76,
+                                "SA 1": 86,
+                                "FA 3": 79,
+                                "FA 4": 95,
+                                "SA 2": 85
+                        },
+                        "CARNATIC PERCUSSION": {
+                                "FA 1": 76,
+                                "FA 2": 84,
+                                "SA 1": 79,
+                                "FA 3": 73,
+                                "FA 4": 81,
+                                "SA 2": 78
+                        },
+                        "PUNJABI": {
+                                "FA 1": 89,
+                                "FA 2": 73,
+                                "SA 1": 88,
+                                "FA 3": 84,
+                                "FA 4": 71,
+                                "SA 2": 72
+                        },
+                        "PERSIAN": {
+                                "FA 1": 89,
+                                "FA 2": 90,
+                                "SA 1": 73,
+                                "FA 3": 72,
+                                "FA 4": 74,
+                                "SA 2": 74
+                        }
+                }
+        },
+        "stud14": {
+                "Roll_No": 14,
+                "IsDeleted": "False",
+                "Name": "Student 14",
+                "Subjects": {
+                        "BHOTI": {
+                                "FA 1": 93,
+                                "FA 2": 91,
+                                "SA 1": 90,
+                                "FA 3": 84,
+                                "FA 4": 77,
+                                "SA 2": 82
+                        },
+                        "ENGLISH CORE": {
+                                "FA 1": 96,
+                                "FA 2": 74,
+                                "SA 1": 86,
+                                "FA 3": 78,
+                                "FA 4": 83,
+                                "SA 2": 75
+                        },
+                        "RUSSIAN": {
+                                "FA 1": 84,
+                                "FA 2": 86,
+                                "SA 1": 91,
+                                "FA 3": 95,
+                                "FA 4": 77,
+                                "SA 2": 83
+                        },
+                        "LEPCHA": {
+                                "FA 1": 91,
+                                "FA 2": 82,
+                                "SA 1": 97,
+                                "FA 3": 86,
+                                "FA 4": 96,
+                                "SA 2": 70
+                        },
+                        "URDU CORE": {
+                                "FA 1": 88,
+                                "FA 2": 91,
+                                "SA 1": 96,
+                                "FA 3": 94,
+                                "FA 4": 90,
+                                "SA 2": 94
+                        },
+                        "TIBETAN": {
+                                "FA 1": 95,
+                                "FA 2": 79,
+                                "SA 1": 92,
+                                "FA 3": 80,
+                                "FA 4": 79,
+                                "SA 2": 70
+                        },
+                        "POLITICAL SCIENCE": {
+                                "FA 1": 94,
+                                "FA 2": 96,
+                                "SA 1": 92,
+                                "FA 3": 88,
+                                "FA 4": 73,
+                                "SA 2": 86
+                        },
+                        "HOME SCIENCE": {
+                                "FA 1": 71,
+                                "FA 2": 100,
+                                "SA 1": 94,
+                                "FA 3": 99,
+                                "FA 4": 77,
+                                "SA 2": 92
+                        },
+                        "MATHEMATICS": {
+                                "FA 1": 84,
+                                "FA 2": 88,
+                                "SA 1": 80,
+                                "FA 3": 78,
+                                "FA 4": 77,
+                                "SA 2": 76
+                        },
+                        "MARATHI": {
+                                "FA 1": 85,
+                                "FA 2": 80,
+                                "SA 1": 95,
+                                "FA 3": 90,
+                                "FA 4": 91,
+                                "SA 2": 72
+                        },
+                        "GERMAN": {
+                                "FA 1": 87,
+                                "FA 2": 81,
+                                "SA 1": 86,
+                                "FA 3": 89,
+                                "FA 4": 75,
+                                "SA 2": 83
+                        }
+                }
+        },
+        "stud15": {
+                "Roll_No": 15,
+                "IsDeleted": "False",
+                "Name": "Student 15",
+                "Subjects": {
+                        "TELUGU AP": {
+                                "FA 1": 94,
+                                "FA 2": 84,
+                                "SA 1": 78,
+                                "FA 3": 72,
+                                "FA 4": 78,
+                                "SA 2": 87
+                        },
+                        "RUSSIAN": {
+                                "FA 1": 97,
+                                "FA 2": 86,
+                                "SA 1": 83,
+                                "FA 3": 91,
+                                "FA 4": 84,
+                                "SA 2": 96
+                        },
+                        "GERMAN": {
+                                "FA 1": 80,
+                                "FA 2": 99,
+                                "SA 1": 96,
+                                "FA 3": 88,
+                                "FA 4": 93,
+                                "SA 2": 94
+                        },
+                        "HOME SCIENCE": {
+                                "FA 1": 91,
+                                "FA 2": 70,
+                                "SA 1": 97,
+                                "FA 3": 77,
+                                "FA 4": 96,
+                                "SA 2": 76
+                        },
+                        "GUJARATI": {
+                                "FA 1": 98,
+                                "FA 2": 100,
+                                "SA 1": 100,
+                                "FA 3": 95,
+                                "FA 4": 76,
+                                "SA 2": 97
+                        },
+                        "ACCOUNTANCY": {
+                                "FA 1": 93,
+                                "FA 2": 73,
+                                "SA 1": 80,
+                                "FA 3": 75,
+                                "FA 4": 89,
+                                "SA 2": 91
+                        },
+                        "ARABIC": {
+                                "FA 1": 92,
+                                "FA 2": 74,
+                                "SA 1": 87,
+                                "FA 3": 91,
+                                "FA 4": 91,
+                                "SA 2": 82
+                        }
+                }
+        },
+        "stud16": {
+                "Roll_No": 16,
+                "IsDeleted": "False",
+                "Name": "Student 16",
+                "Subjects": {
+                        "PUNJABI": {
+                                "FA 1": 97,
+                                "FA 2": 96,
+                                "SA 1": 84,
+                                "FA 3": 87,
+                                "FA 4": 82,
+                                "SA 2": 87
+                        },
+                        "FRENCH": {
+                                "FA 1": 81,
+                                "FA 2": 89,
+                                "SA 1": 96,
+                                "FA 3": 99,
+                                "FA 4": 96,
+                                "SA 2": 84
+                        },
+                        "PHYSICAL EDUCATION": {
+                                "FA 1": 90,
+                                "FA 2": 98,
+                                "SA 1": 82,
+                                "FA 3": 84,
+                                "FA 4": 86,
+                                "SA 2": 72
+                        },
+                        "FINE ARTS": {
+                                "FA 1": 95,
+                                "FA 2": 73,
+                                "SA 1": 98,
+                                "FA 3": 99,
+                                "FA 4": 79,
+                                "SA 2": 92
+                        },
+                        "HINDUSTANI PERCUSSION": {
+                                "FA 1": 93,
+                                "FA 2": 79,
+                                "SA 1": 93,
+                                "FA 3": 81,
+                                "FA 4": 79,
+                                "SA 2": 92
+                        },
+                        "COMPUTER SCIENCE": {
+                                "FA 1": 98,
+                                "FA 2": 70,
+                                "SA 1": 74,
+                                "FA 3": 78,
+                                "FA 4": 98,
+                                "SA 2": 81
+                        },
+                        "LEGAL STUDIES": {
+                                "FA 1": 75,
+                                "FA 2": 95,
+                                "SA 1": 78,
+                                "FA 3": 94,
+                                "FA 4": 83,
+                                "SA 2": 91
+                        },
+                        "PERSIAN": {
+                                "FA 1": 92,
+                                "FA 2": 79,
+                                "SA 1": 100,
+                                "FA 3": 86,
+                                "FA 4": 98,
+                                "SA 2": 95
+                        },
+                        "APPLIED MATHEMATICS": {
+                                "FA 1": 91,
+                                "FA 2": 98,
+                                "SA 1": 79,
+                                "FA 3": 80,
+                                "FA 4": 97,
+                                "SA 2": 70
+                        },
+                        "DANCE": {
+                                "FA 1": 76,
+                                "FA 2": 71,
+                                "SA 1": 83,
+                                "FA 3": 94,
+                                "FA 4": 95,
+                                "SA 2": 86
+                        }
+                }
+        },
+        "stud17": {
+                "Roll_No": 17,
+                "IsDeleted": "False",
+                "Name": "Student 17",
+                "Subjects": {
+                        "HINDI CORE": {
+                                "FA 1": 97,
+                                "FA 2": 77,
+                                "SA 1": 87,
+                                "FA 3": 94,
+                                "FA 4": 87,
+                                "SA 2": 89
+                        },
+                        "ENGLISH ELECTIVE": {
+                                "FA 1": 100,
+                                "FA 2": 92,
+                                "SA 1": 90,
+                                "FA 3": 98,
+                                "FA 4": 86,
+                                "SA 2": 100
+                        },
+                        "PHYSICAL EDUCATION": {
+                                "FA 1": 84,
+                                "FA 2": 79,
+                                "SA 1": 95,
+                                "FA 3": 82,
+                                "FA 4": 83,
+                                "SA 2": 84
+                        },
+                        "MIZO": {
+                                "FA 1": 99,
+                                "FA 2": 77,
+                                "SA 1": 94,
+                                "FA 3": 90,
+                                "FA 4": 75,
+                                "SA 2": 93
+                        },
+                        "FINE ARTS": {
+                                "FA 1": 93,
+                                "FA 2": 78,
+                                "SA 1": 87,
+                                "FA 3": 84,
+                                "FA 4": 93,
+                                "SA 2": 99
+                        },
+                        "NEPALI": {
+                                "FA 1": 87,
+                                "FA 2": 81,
+                                "SA 1": 84,
+                                "FA 3": 85,
+                                "FA 4": 85,
+                                "SA 2": 94
+                        },
+                        "PSYCHOLOGY": {
+                                "FA 1": 89,
+                                "FA 2": 85,
+                                "SA 1": 97,
+                                "FA 3": 96,
+                                "FA 4": 73,
+                                "SA 2": 77
+                        },
+                        "MARATHI": {
+                                "FA 1": 87,
+                                "FA 2": 74,
+                                "SA 1": 70,
+                                "FA 3": 100,
+                                "FA 4": 77,
+                                "SA 2": 88
+                        },
+                        "KANNADA": {
+                                "FA 1": 78,
+                                "FA 2": 71,
+                                "SA 1": 87,
+                                "FA 3": 75,
+                                "FA 4": 94,
+                                "SA 2": 100
+                        },
+                        "TELUGU TELANGANA": {
+                                "FA 1": 86,
+                                "FA 2": 76,
+                                "SA 1": 76,
+                                "FA 3": 80,
+                                "FA 4": 76,
+                                "SA 2": 100
+                        }
+                }
+        },
+        "stud18": {
+                "Roll_No": 18,
+                "IsDeleted": "False",
+                "Name": "Student 18",
+                "Subjects": {
+                        "MALAYALAM": {
+                                "FA 1": 90,
+                                "FA 2": 83,
+                                "SA 1": 75,
+                                "FA 3": 82,
+                                "FA 4": 97,
+                                "SA 2": 93
+                        },
+                        "RUSSIAN": {
+                                "FA 1": 87,
+                                "FA 2": 89,
+                                "SA 1": 98,
+                                "FA 3": 82,
+                                "FA 4": 77,
+                                "SA 2": 92
+                        },
+                        "CARNATIC MELODIC": {
+                                "FA 1": 82,
+                                "FA 2": 75,
+                                "SA 1": 98,
+                                "FA 3": 97,
+                                "FA 4": 97,
+                                "SA 2": 76
+                        },
+                        "ENGLISH CORE": {
+                                "FA 1": 99,
+                                "FA 2": 97,
+                                "SA 1": 85,
+                                "FA 3": 92,
+                                "FA 4": 73,
+                                "SA 2": 84
+                        },
+                        "APPLIED MATHEMATICS": {
+                                "FA 1": 88,
+                                "FA 2": 72,
+                                "SA 1": 80,
+                                "FA 3": 97,
+                                "FA 4": 87,
+                                "SA 2": 100
+                        },
+                        "INFORMATICS PRACTICES": {
+                                "FA 1": 100,
+                                "FA 2": 73,
+                                "SA 1": 83,
+                                "FA 3": 70,
+                                "FA 4": 80,
+                                "SA 2": 71
+                        }
+                }
+        },
+        "stud19": {
+                "Roll_No": 19,
+                "IsDeleted": "False",
+                "Name": "Student 19",
+                "Subjects": {
+                        "NEPALI": {
+                                "FA 1": 86,
+                                "FA 2": 73,
+                                "SA 1": 88,
+                                "FA 3": 70,
+                                "FA 4": 81,
+                                "SA 2": 90
+                        },
+                        "GERMAN": {
+                                "FA 1": 75,
+                                "FA 2": 74,
+                                "SA 1": 96,
+                                "FA 3": 95,
+                                "FA 4": 83,
+                                "SA 2": 79
+                        },
+                        "MANIPURI": {
+                                "FA 1": 74,
+                                "FA 2": 95,
+                                "SA 1": 97,
+                                "FA 3": 93,
+                                "FA 4": 96,
+                                "SA 2": 87
+                        },
+                        "APPLIED MATHEMATICS": {
+                                "FA 1": 89,
+                                "FA 2": 83,
+                                "SA 1": 76,
+                                "FA 3": 84,
+                                "FA 4": 90,
+                                "SA 2": 87
+                        },
+                        "PUNJABI": {
+                                "FA 1": 86,
+                                "FA 2": 95,
+                                "SA 1": 73,
+                                "FA 3": 77,
+                                "FA 4": 96,
+                                "SA 2": 76
+                        },
+                        "RUSSIAN": {
+                                "FA 1": 93,
+                                "FA 2": 76,
+                                "SA 1": 89,
+                                "FA 3": 92,
+                                "FA 4": 84,
+                                "SA 2": 78
+                        },
+                        "LIMBOO": {
+                                "FA 1": 73,
+                                "FA 2": 86,
+                                "SA 1": 98,
+                                "FA 3": 95,
+                                "FA 4": 100,
+                                "SA 2": 81
+                        },
+                        "ENGLISH CORE": {
+                                "FA 1": 85,
+                                "FA 2": 91,
+                                "SA 1": 82,
+                                "FA 3": 81,
+                                "FA 4": 73,
+                                "SA 2": 75
+                        },
+                        "PERSIAN": {
+                                "FA 1": 94,
+                                "FA 2": 83,
+                                "SA 1": 87,
+                                "FA 3": 84,
+                                "FA 4": 92,
+                                "SA 2": 94
+                        },
+                        "CHEMISTRY": {
+                                "FA 1": 81,
+                                "FA 2": 97,
+                                "SA 1": 99,
+                                "FA 3": 70,
+                                "FA 4": 94,
+                                "SA 2": 98
+                        },
+                        "ACCOUNTANCY": {
+                                "FA 1": 71,
+                                "FA 2": 76,
+                                "SA 1": 88,
+                                "FA 3": 85,
+                                "FA 4": 90,
+                                "SA 2": 86
+                        }
+                }
+        },
+        "stud20": {
+                "Roll_No": 20,
+                "IsDeleted": "False",
+                "Name": "Student 20",
+                "Subjects": {
+                        "NEPALI": {
+                                "FA 1": 73,
+                                "FA 2": 78,
+                                "SA 1": 79,
+                                "FA 3": 71,
+                                "FA 4": 73,
+                                "SA 2": 79
+                        },
+                        "RUSSIAN": {
+                                "FA 1": 95,
+                                "FA 2": 96,
+                                "SA 1": 93,
+                                "FA 3": 75,
+                                "FA 4": 97,
+                                "SA 2": 84
+                        },
+                        "LEPCHA": {
+                                "FA 1": 90,
+                                "FA 2": 79,
+                                "SA 1": 91,
+                                "FA 3": 70,
+                                "FA 4": 93,
+                                "SA 2": 85
+                        },
+                        "KNOWLEDGE TRADITION": {
+                                "FA 1": 71,
+                                "FA 2": 77,
+                                "SA 1": 88,
+                                "FA 3": 91,
+                                "FA 4": 93,
+                                "SA 2": 79
+                        },
+                        "PHYSICAL EDUCATION": {
+                                "FA 1": 73,
+                                "FA 2": 73,
+                                "SA 1": 94,
+                                "FA 3": 93,
+                                "FA 4": 74,
+                                "SA 2": 100
+                        },
+                        "LEGAL STUDIES": {
+                                "FA 1": 79,
+                                "FA 2": 85,
+                                "SA 1": 100,
+                                "FA 3": 70,
+                                "FA 4": 91,
+                                "SA 2": 70
+                        },
+                        "CARNATIC PERCUSSION": {
+                                "FA 1": 98,
+                                "FA 2": 71,
+                                "SA 1": 71,
+                                "FA 3": 83,
+                                "FA 4": 74,
+                                "SA 2": 81
+                        },
+                        "TELUGU TELANGANA": {
+                                "FA 1": 75,
+                                "FA 2": 96,
+                                "SA 1": 97,
+                                "FA 3": 75,
+                                "FA 4": 77,
+                                "SA 2": 73
+                        },
+                        "CHEMISTRY": {
+                                "FA 1": 98,
+                                "FA 2": 85,
+                                "SA 1": 71,
+                                "FA 3": 86,
+                                "FA 4": 75,
+                                "SA 2": 93
+                        },
+                        "SANSKRIT CORE": {
+                                "FA 1": 71,
+                                "FA 2": 93,
+                                "SA 1": 84,
+                                "FA 3": 78,
+                                "FA 4": 97,
+                                "SA 2": 81
+                        },
+                        "KOKBOROK": {
+                                "FA 1": 86,
+                                "FA 2": 83,
+                                "SA 1": 70,
+                                "FA 3": 84,
+                                "FA 4": 80,
+                                "SA 2": 97
+                        }
+                }
+        },
+        "stud21": {
+                "Roll_No": 21,
+                "IsDeleted": "False",
+                "Name": "Student 21",
+                "Subjects": {
+                        "TIBETAN": {
+                                "FA 1": 100,
+                                "FA 2": 85,
+                                "SA 1": 84,
+                                "FA 3": 100,
+                                "FA 4": 89,
+                                "SA 2": 92
+                        },
+                        "ENGLISH ELECTIVE": {
+                                "FA 1": 91,
+                                "FA 2": 71,
+                                "SA 1": 82,
+                                "FA 3": 86,
+                                "FA 4": 73,
+                                "SA 2": 72
+                        },
+                        "HOME SCIENCE": {
+                                "FA 1": 82,
+                                "FA 2": 78,
+                                "SA 1": 78,
+                                "FA 3": 98,
+                                "FA 4": 70,
+                                "SA 2": 70
+                        },
+                        "MANIPURI": {
+                                "FA 1": 72,
+                                "FA 2": 84,
+                                "SA 1": 74,
+                                "FA 3": 94,
+                                "FA 4": 96,
+                                "SA 2": 99
+                        },
+                        "HINDUSTANI PERCUSSION": {
+                                "FA 1": 73,
+                                "FA 2": 90,
+                                "SA 1": 90,
+                                "FA 3": 90,
+                                "FA 4": 98,
+                                "SA 2": 91
+                        },
+                        "PSYCHOLOGY": {
+                                "FA 1": 98,
+                                "FA 2": 92,
+                                "SA 1": 86,
+                                "FA 3": 93,
+                                "FA 4": 85,
+                                "SA 2": 70
+                        },
+                        "GERMAN": {
+                                "FA 1": 73,
+                                "FA 2": 77,
+                                "SA 1": 81,
+                                "FA 3": 70,
+                                "FA 4": 80,
+                                "SA 2": 78
+                        },
+                        "MALAYALAM": {
+                                "FA 1": 81,
+                                "FA 2": 96,
+                                "SA 1": 71,
+                                "FA 3": 76,
+                                "FA 4": 73,
+                                "SA 2": 94
+                        },
+                        "FRENCH": {
+                                "FA 1": 87,
+                                "FA 2": 70,
+                                "SA 1": 83,
+                                "FA 3": 92,
+                                "FA 4": 95,
+                                "SA 2": 94
+                        },
+                        "JAPANESE": {
+                                "FA 1": 92,
+                                "FA 2": 80,
+                                "SA 1": 80,
+                                "FA 3": 97,
+                                "FA 4": 80,
+                                "SA 2": 95
+                        }
+                }
+        },
+        "stud22": {
+                "Roll_No": 22,
+                "IsDeleted": "False",
+                "Name": "Student 22",
+                "Subjects": {
+                        "SINDHI": {
+                                "FA 1": 94,
+                                "FA 2": 93,
+                                "SA 1": 97,
+                                "FA 3": 85,
+                                "FA 4": 76,
+                                "SA 2": 91
+                        },
+                        "GERMAN": {
+                                "FA 1": 96,
+                                "FA 2": 71,
+                                "SA 1": 73,
+                                "FA 3": 75,
+                                "FA 4": 85,
+                                "SA 2": 88
+                        },
+                        "HINDI CORE": {
+                                "FA 1": 78,
+                                "FA 2": 77,
+                                "SA 1": 95,
+                                "FA 3": 93,
+                                "FA 4": 73,
+                                "SA 2": 91
+                        },
+                        "HINDUSTANI PERCUSSION": {
+                                "FA 1": 79,
+                                "FA 2": 96,
+                                "SA 1": 97,
+                                "FA 3": 76,
+                                "FA 4": 87,
+                                "SA 2": 77
+                        },
+                        "CARNATIC PERCUSSION": {
+                                "FA 1": 75,
+                                "FA 2": 75,
+                                "SA 1": 98,
+                                "FA 3": 79,
+                                "FA 4": 88,
+                                "SA 2": 94
+                        }
+                }
+        },
+        "stud23": {
+                "Roll_No": 23,
+                "IsDeleted": "False",
+                "Name": "Student 23",
+                "Subjects": {
+                        "HINDI ELECTIVE": {
+                                "FA 1": 86,
+                                "FA 2": 71,
+                                "SA 1": 72,
+                                "FA 3": 87,
+                                "FA 4": 82,
+                                "SA 2": 84
+                        },
+                        "ARABIC": {
+                                "FA 1": 93,
+                                "FA 2": 72,
+                                "SA 1": 73,
+                                "FA 3": 78,
+                                "FA 4": 100,
+                                "SA 2": 89
+                        },
+                        "MANIPURI": {
+                                "FA 1": 70,
+                                "FA 2": 100,
+                                "SA 1": 85,
+                                "FA 3": 100,
+                                "FA 4": 85,
+                                "SA 2": 74
+                        },
+                        "GERMAN": {
+                                "FA 1": 76,
+                                "FA 2": 73,
+                                "SA 1": 77,
+                                "FA 3": 73,
+                                "FA 4": 82,
+                                "SA 2": 78
+                        },
+                        "MATHEMATICS": {
+                                "FA 1": 92,
+                                "FA 2": 94,
+                                "SA 1": 71,
+                                "FA 3": 89,
+                                "FA 4": 72,
+                                "SA 2": 100
+                        },
+                        "MARATHI": {
+                                "FA 1": 86,
+                                "FA 2": 82,
+                                "SA 1": 80,
+                                "FA 3": 82,
+                                "FA 4": 72,
+                                "SA 2": 79
+                        },
+                        "RUSSIAN": {
+                                "FA 1": 82,
+                                "FA 2": 75,
+                                "SA 1": 94,
+                                "FA 3": 93,
+                                "FA 4": 83,
+                                "SA 2": 92
+                        },
+                        "LIMBOO": {
+                                "FA 1": 80,
+                                "FA 2": 79,
+                                "SA 1": 90,
+                                "FA 3": 97,
+                                "FA 4": 96,
+                                "SA 2": 81
+                        },
+                        "SOCIOLOGY": {
+                                "FA 1": 79,
+                                "FA 2": 70,
+                                "SA 1": 90,
+                                "FA 3": 71,
+                                "FA 4": 76,
+                                "SA 2": 74
+                        },
+                        "ENTREPRENEURSHIP": {
+                                "FA 1": 71,
+                                "FA 2": 88,
+                                "SA 1": 82,
+                                "FA 3": 71,
+                                "FA 4": 73,
+                                "SA 2": 85
+                        }
+                }
+        },
+        "stud24": {
+                "Roll_No": 24,
+                "IsDeleted": "False",
+                "Name": "Student 24",
+                "Subjects": {
+                        "TIBETAN": {
+                                "FA 1": 99,
+                                "FA 2": 82,
+                                "SA 1": 90,
+                                "FA 3": 89,
+                                "FA 4": 87,
+                                "SA 2": 82
+                        },
+                        "PERSIAN": {
+                                "FA 1": 85,
+                                "FA 2": 92,
+                                "SA 1": 70,
+                                "FA 3": 92,
+                                "FA 4": 92,
+                                "SA 2": 79
+                        },
+                        "PUNJABI": {
+                                "FA 1": 88,
+                                "FA 2": 77,
+                                "SA 1": 79,
+                                "FA 3": 96,
+                                "FA 4": 87,
+                                "SA 2": 90
+                        },
+                        "HISTORY": {
+                                "FA 1": 96,
+                                "FA 2": 81,
+                                "SA 1": 96,
+                                "FA 3": 87,
+                                "FA 4": 77,
+                                "SA 2": 96
+                        },
+                        "DANCE": {
+                                "FA 1": 73,
+                                "FA 2": 72,
+                                "SA 1": 99,
+                                "FA 3": 95,
+                                "FA 4": 91,
+                                "SA 2": 73
+                        },
+                        "ENGLISH ELECTIVE": {
+                                "FA 1": 92,
+                                "FA 2": 91,
+                                "SA 1": 94,
+                                "FA 3": 70,
+                                "FA 4": 71,
+                                "SA 2": 72
+                        },
+                        "MALAYALAM": {
+                                "FA 1": 85,
+                                "FA 2": 88,
+                                "SA 1": 86,
+                                "FA 3": 97,
+                                "FA 4": 79,
+                                "SA 2": 81
+                        },
+                        "SPANISH": {
+                                "FA 1": 94,
+                                "FA 2": 100,
+                                "SA 1": 96,
+                                "FA 3": 76,
+                                "FA 4": 100,
+                                "SA 2": 81
+                        },
+                        "RUSSIAN": {
+                                "FA 1": 92,
+                                "FA 2": 93,
+                                "SA 1": 82,
+                                "FA 3": 88,
+                                "FA 4": 75,
+                                "SA 2": 75
+                        }
+                }
+        },
+        "stud25": {
+                "Roll_No": 25,
+                "IsDeleted": "False",
+                "Name": "Student 25",
+                "Subjects": {
+                        "MALAYALAM": {
+                                "FA 1": 89,
+                                "FA 2": 72,
+                                "SA 1": 84,
+                                "FA 3": 98,
+                                "FA 4": 81,
+                                "SA 2": 81
+                        },
+                        "ENGLISH ELECTIVE": {
+                                "FA 1": 74,
+                                "FA 2": 99,
+                                "SA 1": 99,
+                                "FA 3": 89,
+                                "FA 4": 92,
+                                "SA 2": 77
+                        },
+                        "PHYSICAL EDUCATION": {
+                                "FA 1": 79,
+                                "FA 2": 92,
+                                "SA 1": 71,
+                                "FA 3": 82,
+                                "FA 4": 84,
+                                "SA 2": 72
+                        },
+                        "HINDI CORE": {
+                                "FA 1": 89,
+                                "FA 2": 95,
+                                "SA 1": 86,
+                                "FA 3": 84,
+                                "FA 4": 96,
+                                "SA 2": 76
+                        },
+                        "TELUGU TELANGANA": {
+                                "FA 1": 89,
+                                "FA 2": 78,
+                                "SA 1": 91,
+                                "FA 3": 95,
+                                "FA 4": 85,
+                                "SA 2": 76
+                        },
+                        "CHEMISTRY": {
+                                "FA 1": 72,
+                                "FA 2": 96,
+                                "SA 1": 93,
+                                "FA 3": 96,
+                                "FA 4": 96,
+                                "SA 2": 99
+                        }
+                }
+        },
+        "stud26": {
+                "Roll_No": 26,
+                "IsDeleted": "False",
+                "Name": "Student 26",
+                "Subjects": {
+                        "MIZO": {
+                                "FA 1": 83,
+                                "FA 2": 87,
+                                "SA 1": 82,
+                                "FA 3": 98,
+                                "FA 4": 100,
+                                "SA 2": 100
+                        },
+                        "ENGLISH ELECTIVE": {
+                                "FA 1": 83,
+                                "FA 2": 84,
+                                "SA 1": 79,
+                                "FA 3": 93,
+                                "FA 4": 89,
+                                "SA 2": 77
+                        },
+                        "TELUGU AP": {
+                                "FA 1": 90,
+                                "FA 2": 71,
+                                "SA 1": 85,
+                                "FA 3": 88,
+                                "FA 4": 80,
+                                "SA 2": 79
+                        },
+                        "GEOGRAPHY": {
+                                "FA 1": 89,
+                                "FA 2": 85,
+                                "SA 1": 100,
+                                "FA 3": 72,
+                                "FA 4": 82,
+                                "SA 2": 77
+                        },
+                        "SINDHI": {
+                                "FA 1": 74,
+                                "FA 2": 72,
+                                "SA 1": 80,
+                                "FA 3": 87,
+                                "FA 4": 79,
+                                "SA 2": 74
+                        }
+                }
+        },
+        "stud27": {
+                "Roll_No": 27,
+                "IsDeleted": "False",
+                "Name": "Student 27",
+                "Subjects": {
+                        "MANIPURI": {
+                                "FA 1": 94,
+                                "FA 2": 73,
+                                "SA 1": 77,
+                                "FA 3": 82,
+                                "FA 4": 77,
+                                "SA 2": 75
+                        },
+                        "ENGLISH ELECTIVE": {
+                                "FA 1": 93,
+                                "FA 2": 93,
+                                "SA 1": 99,
+                                "FA 3": 75,
+                                "FA 4": 99,
+                                "SA 2": 86
+                        },
+                        "LEGAL STUDIES": {
+                                "FA 1": 92,
+                                "FA 2": 71,
+                                "SA 1": 98,
+                                "FA 3": 82,
+                                "FA 4": 81,
+                                "SA 2": 99
+                        },
+                        "HINDUSTANI VOCAL": {
+                                "FA 1": 80,
+                                "FA 2": 75,
+                                "SA 1": 92,
+                                "FA 3": 87,
+                                "FA 4": 86,
+                                "SA 2": 97
+                        },
+                        "HISTORY": {
+                                "FA 1": 92,
+                                "FA 2": 81,
+                                "SA 1": 81,
+                                "FA 3": 89,
+                                "FA 4": 94,
+                                "SA 2": 76
+                        }
+                }
+        },
+        "stud28": {
+                "Roll_No": 28,
+                "IsDeleted": "False",
+                "Name": "Student 28",
+                "Subjects": {
+                        "MARATHI": {
+                                "FA 1": 74,
+                                "FA 2": 83,
+                                "SA 1": 87,
+                                "FA 3": 82,
+                                "FA 4": 99,
+                                "SA 2": 75
+                        },
+                        "ARABIC": {
+                                "FA 1": 80,
+                                "FA 2": 95,
+                                "SA 1": 70,
+                                "FA 3": 93,
+                                "FA 4": 98,
+                                "SA 2": 77
+                        },
+                        "GERMAN": {
+                                "FA 1": 99,
+                                "FA 2": 70,
+                                "SA 1": 81,
+                                "FA 3": 84,
+                                "FA 4": 87,
+                                "SA 2": 88
+                        },
+                        "ASSAMESE": {
+                                "FA 1": 93,
+                                "FA 2": 86,
+                                "SA 1": 73,
+                                "FA 3": 71,
+                                "FA 4": 91,
+                                "SA 2": 98
+                        },
+                        "LEGAL STUDIES": {
+                                "FA 1": 96,
+                                "FA 2": 84,
+                                "SA 1": 95,
+                                "FA 3": 96,
+                                "FA 4": 96,
+                                "SA 2": 88
+                        },
+                        "ODIA": {
+                                "FA 1": 82,
+                                "FA 2": 96,
+                                "SA 1": 94,
+                                "FA 3": 83,
+                                "FA 4": 94,
+                                "SA 2": 70
+                        }
+                }
+        },
+        "stud29": {
+                "Roll_No": 29,
+                "IsDeleted": "False",
+                "Name": "Student 29",
+                "Subjects": {
+                        "PUNJABI": {
+                                "FA 1": 80,
+                                "FA 2": 97,
+                                "SA 1": 100,
+                                "FA 3": 85,
+                                "FA 4": 100,
+                                "SA 2": 95
+                        },
+                        "GERMAN": {
+                                "FA 1": 99,
+                                "FA 2": 72,
+                                "SA 1": 76,
+                                "FA 3": 76,
+                                "FA 4": 85,
+                                "SA 2": 76
+                        },
+                        "NEPALI": {
+                                "FA 1": 80,
+                                "FA 2": 71,
+                                "SA 1": 87,
+                                "FA 3": 96,
+                                "FA 4": 75,
+                                "SA 2": 73
+                        },
+                        "ASSAMESE": {
+                                "FA 1": 77,
+                                "FA 2": 70,
+                                "SA 1": 92,
+                                "FA 3": 79,
+                                "FA 4": 95,
+                                "SA 2": 87
+                        },
+                        "BHOTI": {
+                                "FA 1": 75,
+                                "FA 2": 70,
+                                "SA 1": 82,
+                                "FA 3": 82,
+                                "FA 4": 74,
+                                "SA 2": 80
+                        },
+                        "URDU ELECTIVE": {
+                                "FA 1": 88,
+                                "FA 2": 81,
+                                "SA 1": 74,
+                                "FA 3": 100,
+                                "FA 4": 81,
+                                "SA 2": 97
+                        },
+                        "CHEMISTRY": {
+                                "FA 1": 90,
+                                "FA 2": 80,
+                                "SA 1": 83,
+                                "FA 3": 78,
+                                "FA 4": 89,
+                                "SA 2": 80
+                        },
+                        "NCC": {
+                                "FA 1": 83,
+                                "FA 2": 93,
+                                "SA 1": 77,
+                                "FA 3": 87,
+                                "FA 4": 79,
+                                "SA 2": 99
+                        },
+                        "FRENCH": {
+                                "FA 1": 100,
+                                "FA 2": 71,
+                                "SA 1": 100,
+                                "FA 3": 80,
+                                "FA 4": 86,
+                                "SA 2": 92
+                        },
+                        "BUSINESS STUDIES": {
+                                "FA 1": 86,
+                                "FA 2": 85,
+                                "SA 1": 88,
+                                "FA 3": 73,
+                                "FA 4": 100,
+                                "SA 2": 81
+                        },
+                        "ENGLISH CORE": {
+                                "FA 1": 75,
+                                "FA 2": 73,
+                                "SA 1": 90,
+                                "FA 3": 73,
+                                "FA 4": 93,
+                                "SA 2": 97
+                        },
+                        "BHUTIA": {
+                                "FA 1": 91,
+                                "FA 2": 76,
+                                "SA 1": 100,
+                                "FA 3": 86,
+                                "FA 4": 90,
+                                "SA 2": 78
+                        }
+                }
+        },
+        "stud30": {
+                "Roll_No": 30,
+                "IsDeleted": "False",
+                "Name": "Student 30",
+                "Subjects": {
+                        "SANSKRIT CORE": {
+                                "FA 1": 92,
+                                "FA 2": 83,
+                                "SA 1": 91,
+                                "FA 3": 70,
+                                "FA 4": 79,
+                                "SA 2": 96
+                        },
+                        "JAPANESE": {
+                                "FA 1": 86,
+                                "FA 2": 79,
+                                "SA 1": 86,
+                                "FA 3": 88,
+                                "FA 4": 70,
+                                "SA 2": 73
+                        },
+                        "PSYCHOLOGY": {
+                                "FA 1": 72,
+                                "FA 2": 90,
+                                "SA 1": 100,
+                                "FA 3": 74,
+                                "FA 4": 86,
+                                "SA 2": 87
+                        },
+                        "URDU CORE": {
+                                "FA 1": 73,
+                                "FA 2": 95,
+                                "SA 1": 97,
+                                "FA 3": 83,
+                                "FA 4": 81,
+                                "SA 2": 71
+                        },
+                        "NEPALI": {
+                                "FA 1": 84,
+                                "FA 2": 95,
+                                "SA 1": 83,
+                                "FA 3": 77,
+                                "FA 4": 81,
+                                "SA 2": 83
+                        }
+                }
+        },
+        "stud31": {
+                "Roll_No": 31,
+                "IsDeleted": "False",
+                "Name": "Student 31",
+                "Subjects": {
+                        "BODO": {
+                                "FA 1": 93,
+                                "FA 2": 97,
+                                "SA 1": 77,
+                                "FA 3": 98,
+                                "FA 4": 73,
+                                "SA 2": 84
+                        },
+                        "JAPANESE": {
+                                "FA 1": 96,
+                                "FA 2": 76,
+                                "SA 1": 91,
+                                "FA 3": 95,
+                                "FA 4": 94,
+                                "SA 2": 86
+                        },
+                        "FRENCH": {
+                                "FA 1": 73,
+                                "FA 2": 93,
+                                "SA 1": 91,
+                                "FA 3": 89,
+                                "FA 4": 75,
+                                "SA 2": 100
+                        },
+                        "HOME SCIENCE": {
+                                "FA 1": 74,
+                                "FA 2": 98,
+                                "SA 1": 92,
+                                "FA 3": 81,
+                                "FA 4": 70,
+                                "SA 2": 82
+                        },
+                        "NEPALI": {
+                                "FA 1": 87,
+                                "FA 2": 89,
+                                "SA 1": 96,
+                                "FA 3": 81,
+                                "FA 4": 90,
+                                "SA 2": 77
+                        },
+                        "ACCOUNTANCY": {
+                                "FA 1": 92,
+                                "FA 2": 98,
+                                "SA 1": 83,
+                                "FA 3": 78,
+                                "FA 4": 79,
+                                "SA 2": 79
+                        },
+                        "MARATHI": {
+                                "FA 1": 72,
+                                "FA 2": 78,
+                                "SA 1": 99,
+                                "FA 3": 89,
+                                "FA 4": 70,
+                                "SA 2": 93
+                        },
+                        "NCC": {
+                                "FA 1": 80,
+                                "FA 2": 82,
+                                "SA 1": 84,
+                                "FA 3": 90,
+                                "FA 4": 87,
+                                "SA 2": 95
+                        }
+                }
+        },
+        "stud32": {
+                "Roll_No": 32,
+                "IsDeleted": "False",
+                "Name": "Student 32",
+                "Subjects": {
+                        "ASSAMESE": {
+                                "FA 1": 99,
+                                "FA 2": 83,
+                                "SA 1": 96,
+                                "FA 3": 95,
+                                "FA 4": 86,
+                                "SA 2": 72
+                        },
+                        "ENGLISH ELECTIVE": {
+                                "FA 1": 85,
+                                "FA 2": 99,
+                                "SA 1": 72,
+                                "FA 3": 75,
+                                "FA 4": 85,
+                                "SA 2": 94
+                        },
+                        "POLITICAL SCIENCE": {
+                                "FA 1": 90,
+                                "FA 2": 83,
+                                "SA 1": 90,
+                                "FA 3": 91,
+                                "FA 4": 84,
+                                "SA 2": 91
+                        },
+                        "HINDUSTANI MELODIC": {
+                                "FA 1": 96,
+                                "FA 2": 75,
+                                "SA 1": 89,
+                                "FA 3": 90,
+                                "FA 4": 97,
+                                "SA 2": 71
+                        },
+                        "HINDUSTANI PERCUSSION": {
+                                "FA 1": 73,
+                                "FA 2": 70,
+                                "SA 1": 81,
+                                "FA 3": 96,
+                                "FA 4": 73,
+                                "SA 2": 76
+                        }
+                }
+        },
+        "stud33": {
+                "Roll_No": 33,
+                "IsDeleted": "False",
+                "Name": "Student 33",
+                "Subjects": {
+                        "MALAYALAM": {
+                                "FA 1": 87,
+                                "FA 2": 98,
+                                "SA 1": 70,
+                                "FA 3": 94,
+                                "FA 4": 86,
+                                "SA 2": 92
+                        },
+                        "ENGLISH CORE": {
+                                "FA 1": 100,
+                                "FA 2": 85,
+                                "SA 1": 76,
+                                "FA 3": 76,
+                                "FA 4": 72,
+                                "SA 2": 88
+                        },
+                        "ECONOMICS": {
+                                "FA 1": 86,
+                                "FA 2": 74,
+                                "SA 1": 70,
+                                "FA 3": 95,
+                                "FA 4": 88,
+                                "SA 2": 97
+                        },
+                        "BODO": {
+                                "FA 1": 94,
+                                "FA 2": 86,
+                                "SA 1": 77,
+                                "FA 3": 75,
+                                "FA 4": 85,
+                                "SA 2": 76
+                        },
+                        "TANGKHUL": {
+                                "FA 1": 78,
+                                "FA 2": 77,
+                                "SA 1": 89,
+                                "FA 3": 79,
+                                "FA 4": 98,
+                                "SA 2": 82
+                        },
+                        "URDU CORE": {
+                                "FA 1": 71,
+                                "FA 2": 90,
+                                "SA 1": 71,
+                                "FA 3": 94,
+                                "FA 4": 95,
+                                "SA 2": 83
+                        },
+                        "ACCOUNTANCY": {
+                                "FA 1": 87,
+                                "FA 2": 75,
+                                "SA 1": 81,
+                                "FA 3": 95,
+                                "FA 4": 97,
+                                "SA 2": 74
+                        },
+                        "TIBETAN": {
+                                "FA 1": 77,
+                                "FA 2": 76,
+                                "SA 1": 92,
+                                "FA 3": 75,
+                                "FA 4": 96,
+                                "SA 2": 70
+                        }
+                }
+        }
+}
