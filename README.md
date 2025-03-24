@@ -9,7 +9,7 @@ You are permitted to use and share this project, provided that you credit the or
 
 ### Terms of Use:
 
-1. **Usage Rights** – This project is free to use for personal and educational purposes without any fees.
+1. **Usage Rights** – This project is free to use for personal and educational purposes without any fees. Please contact the author *(me, email mentioned below)* for commercial uses
 
 2. **Sharing** – You may share the original, unmodified version of this project, provided that this agreement remains intact and included with all copies.
 
