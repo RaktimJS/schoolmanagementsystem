@@ -32,6 +32,6 @@ Drafted with the assistance of ChatGPT, but all rights and final authority remai
 Good luck with your project! 🎉
 
 
-Email       :   raktimunreal4@gmail.com
-GitHub      :   https://www.github.com/raktimjs
+Email       :   raktimunreal4@gmail.com<br>
+GitHub      :   https://www.github.com/raktimjs<br>
 Instagram   :   https://www.instagram.com/raktimjs
