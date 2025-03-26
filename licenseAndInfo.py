@@ -45,7 +45,7 @@ def info():
         print("\tThis project is provided \"as is,\" without warranties of any kind, express or\n\timplied. The author is not responsible for any issues, data loss, or unintended\n\tconsequences arising from its use.")
         print("")
         print(f"{B}Agreement:{R}")
-        print(f"\tBy using this project, you acknowledge and agree to these terms. Failure to comply\n\tmayresult in consequences as deemed appropriate.")
+        print(f"\tBy using this project, you acknowledge and agree to these terms. Failure to comply\n\tmay result in consequences as deemed appropriate.")
         print("")
         print(f"{'-'*90}")
         print("")
