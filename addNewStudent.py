@@ -19,7 +19,7 @@ TURN LINE WRAPPING OFF FOR A BETTER VIEW
 | particular grade matches the hardcoded naming format              |
 +-------------------------------------------------------------------+
 
-Last Edited: 19th March, 2025
+Last Edited: 30th March, 2025
 
 """
 
@@ -28,9 +28,9 @@ Last Edited: 19th March, 2025
 
 DEL_LINE = "\033[A\033[K"
 WHITE = "\033[38;2;212;212;212m"
-YELLOW = "\033[38;2;255;200;0m"
-RED = "\033[38;2;200;0;0m"
-lb = "\033[38;2;142;238;190m"
+YELLOW = "\033[38;2;255;200m"
+RED = "\033[38;2;200;0m"
+lb = "\033[38;2;108;180;238m"
 
 
 
@@ -45,9 +45,21 @@ from ReadUpdateDelete import selectSubs11and12
 
 
 
+assessments = {
+        "Formative Assessment 1" : "FA 1",
+        "Formative Assessment 2" : "FA 2",
+        "Summative Assessment 1" : "SA 1",
+        "Formative Assessment 3" : "FA 3",
+        "Formative Assessment 4" : "FA 4",
+        "Summative Assessment 2" : "SA 2",
+}
+
 def addNewStudent(jsonFileName: str):
         grade = jsonFileName.split(".")[0].split("grade")[1]
         grade = int(grade)
+        exitLoop = False
+
+
 
 
         if grade >= 1 and grade <= 3:
@@ -90,41 +102,48 @@ def addNewStudent(jsonFileName: str):
                         print("\nThank you! Marks for all subjects for all assessments has been set of zero."
                         " You can edit them later!")
                 else:
-                        print("\nEnter the marks in the order: ")
-                        print(f"\n\t{YELLOW}[FA1, FA2, SA1, FA3, FA4, SA2]{WHITE}\n")
-                        print("Enter them in comma seperated values. [Eg: 100, 88, 95, 79, 81]")
-
-                        print(f"\nAny value greater than {YELLOW}100{WHITE} and less than {YELLOW}999{WHITE} will be made one tenth (Eg: {YELLOW}885{WHITE} will be converted to {YELLOW}88.5{WHITE})")
+                        print(f"\n\nAny value greater than {YELLOW}100{WHITE} and less than {YELLOW}999{WHITE} will be made one tenth (Eg: {YELLOW}885{WHITE} will be converted to {YELLOW}88.5{WHITE})")
                         print(f"Any value greater than {YELLOW}1000{WHITE} will be considered {YELLOW}100{WHITE}\n")
 
-                        print(f"{RED}Arbitrary values will throw you back to the input\n{WHITE}")
+                        print(f"{RED}Arbitrary values will throw you back to the input{WHITE}")
 
-                        for k in newMarks:
-                                while True:
-                                        try:
-                                                math = input(f"{k}: {YELLOW}")
-                                                print(f"{WHITE}", end="")
+                        for i in assessments:
+                                print(f"\n{i}:")
+                                
+                                for k in newMarks:
+                                        while True:
+                                                try:
+                                                        if k == list(newMarks.keys())[0]:
+                                                                mark = input(f"\t{k} (Enter {YELLOW}'QUIT'{WHITE} to quit marks input for all forthcoming assessments): {YELLOW}")
+                                                                print(f"{WHITE}", end="")
 
-                                                math.replace(" ","")
+                                                                if mark.lower() != 'quit':
+                                                                        mark = float(mark)
+                                                                        newMarks[k][assessments[i]] = mark
+                                                                elif mark.lower() == 'quit':
+                                                                        exitLoop = True
+                                                                        break
+                                                                else:
+                                                                        raise ValueError
+                                                        else:
+                                                                while True:
+                                                                        mark = input(f"\t{k}: {YELLOW}")
+                                                                        print(f"{WHITE}", end="")                                                
 
-                                                marksList = list(map(float, math.split(",")))
-
-                                                if len(marksList) == 6:
-                                                        x = list(newMarks[k].keys())
-
-                                                        # print()
-
-                                                        for j in newMarks[k]:
-                                                                newMarks[k][j] = marksList[x.index(j)]
-                                                                # print(f"{j} {RED}:{WHITE} {YELLOW}{newMarks[k][j]}{WHITE}")
-                                                        
-                                                        # print()
-
+                                                                        if mark == 'quit':
+                                                                                print(f"\t{RED}Can't quit midway. Enter marks for all subjects for at least the current assessment{WHITE}\n")
+                                                                        else:
+                                                                                mark = float(mark)
+                                                                                newMarks[k][assessments[i]] = mark
+                                                                                break
                                                         break
-                                                else:
-                                                        print("Invalid Input")
-                                        except ValueError or EOFError:
-                                                print("Invalid Input")
+                                                except ValueError:
+                                                        print("\tInvalid Input\n")
+                                                except EOFError:
+                                                        print("\tInvalid Input\n")
+
+                                        if exitLoop == True:
+                                                break
 
                 for i in newMarks:
                         for j in newMarks[i]:
@@ -190,41 +209,48 @@ def addNewStudent(jsonFileName: str):
                         print("\nThank you! Marks for all subjects for all assessments has been set of zero."
                         " You can edit them later!")
                 else:
-                        print("\nEnter the marks in the order: ")
-                        print(f"\n\t{YELLOW}[FA1, FA2, SA1, FA3, FA4, SA2]{WHITE}\n")
-                        print("Enter them in comma seperated values. [Eg: 100, 88, 95, 79, 81]")
-
-                        print(f"\nAny value greater than {YELLOW}100{WHITE} and less than {YELLOW}999{WHITE} will be made one tenth (Eg: {YELLOW}885{WHITE} will be converted to {YELLOW}88.5{WHITE})")
+                        print(f"\n\nAny value greater than {YELLOW}100{WHITE} and less than {YELLOW}999{WHITE} will be made one tenth (Eg: {YELLOW}885{WHITE} will be converted to {YELLOW}88.5{WHITE})")
                         print(f"Any value greater than {YELLOW}1000{WHITE} will be considered {YELLOW}100{WHITE}\n")
 
-                        print(f"{RED}Arbitrary values will throw you back to the input\n{WHITE}")
+                        print(f"{RED}Arbitrary values will throw you back to the input{WHITE}")
 
-                        for k in newMarks:
-                                while True:
-                                        try:
-                                                math = input(f"{k}: {YELLOW}")
-                                                print(f"{WHITE}", end="")
+                        for i in assessments:
+                                print(f"\n{i}:")
+                                
+                                for k in newMarks:
+                                        while True:
+                                                try:
+                                                        if k == list(newMarks.keys())[0]:
+                                                                mark = input(f"\t{k} (Enter {YELLOW}'QUIT'{WHITE} to quit marks input for all forthcoming assessments): {YELLOW}")
+                                                                print(f"{WHITE}", end="")
 
-                                                math.replace(" ","")
+                                                                if mark.lower() != 'quit':
+                                                                        mark = float(mark)
+                                                                        newMarks[k][assessments[i]] = mark
+                                                                elif mark.lower() == 'quit':
+                                                                        exitLoop = True
+                                                                        break
+                                                                else:
+                                                                        raise ValueError
+                                                        else:
+                                                                while True:
+                                                                        mark = input(f"\t{k}: {YELLOW}")
+                                                                        print(f"{WHITE}", end="")                                                
 
-                                                marksList = list(map(float, math.split(",")))
-
-                                                if len(marksList) == 6:
-                                                        x = list(newMarks[k].keys())
-
-                                                        # print()
-
-                                                        for j in newMarks[k]:
-                                                                newMarks[k][j] = marksList[x.index(j)]
-                                                                # print(f"{j} {RED}:{WHITE} {YELLOW}{newMarks[k][j]}{WHITE}")
-                                                        
-                                                        # print()
-
+                                                                        if mark == 'quit':
+                                                                                print(f"\t{RED}Can't quit midway. Enter marks for all subjects for at least the current assessment{WHITE}\n")
+                                                                        else:
+                                                                                mark = float(mark)
+                                                                                newMarks[k][assessments[i]] = mark
+                                                                                break
                                                         break
-                                                else:
-                                                        print("Invalid Input")
-                                        except ValueError or EOFError:
-                                                print("Invalid Input")
+                                                except ValueError:
+                                                        print("\tInvalid Input\n")
+                                                except EOFError:
+                                                        print("\tInvalid Input\n")
+
+                                        if exitLoop == True:
+                                                break
 
                 for i in newMarks:
                         for j in newMarks[i]:
@@ -321,36 +347,48 @@ def addNewStudent(jsonFileName: str):
                         print("\nThank you! Marks for all subjects for all assessments has been set of zero."
                         " You can edit them later!")
                 else:
-                        print("\nEnter the marks in the order: ")
-                        print(f"\n\t{YELLOW}[FA1, FA2, SA1, FA3, FA4, SA2]{WHITE}\n")
-                        print("Enter them in comma seperated values. [Eg: 100, 88, 95, 79, 81]")
-
-                        print(f"\nAny value greater than {YELLOW}100{WHITE} and less than {YELLOW}999{WHITE} will be made one tenth (Eg: {YELLOW}885{WHITE} will be converted to {YELLOW}88.5{WHITE})")
+                        print(f"\n\nAny value greater than {YELLOW}100{WHITE} and less than {YELLOW}999{WHITE} will be made one tenth (Eg: {YELLOW}885{WHITE} will be converted to {YELLOW}88.5{WHITE})")
                         print(f"Any value greater than {YELLOW}1000{WHITE} will be considered {YELLOW}100{WHITE}\n")
 
-                        print(f"{RED}Arbitrary values will throw you back to the input\n{WHITE}")
+                        print(f"{RED}Arbitrary values will throw you back to the input{WHITE}")
 
-                        for k in newMarks:
-                                while True:
-                                        try:
-                                                math = input(f"{k}: {YELLOW}")
-                                                print(f"{WHITE}", end="")
+                        for i in assessments:
+                                print(f"\n{i}:")
+                                
+                                for k in newMarks:
+                                        while True:
+                                                try:
+                                                        if k == list(newMarks.keys())[0]:
+                                                                mark = input(f"\t{k} (Enter {YELLOW}'QUIT'{WHITE} to quit marks input for all forthcoming assessments): {YELLOW}")
+                                                                print(f"{WHITE}", end="")
 
-                                                math.replace(" ","")
+                                                                if mark.lower() != 'quit':
+                                                                        mark = float(mark)
+                                                                        newMarks[k][assessments[i]] = mark
+                                                                elif mark.lower() == 'quit':
+                                                                        exitLoop = True
+                                                                        break
+                                                                else:
+                                                                        raise ValueError
+                                                        else:
+                                                                while True:
+                                                                        mark = input(f"\t{k}: {YELLOW}")
+                                                                        print(f"{WHITE}", end="")                                                
 
-                                                marksList = list(map(float, math.split(",")))
-
-                                                if len(marksList) == 6:
-                                                        x = list(newMarks[k].keys())
-
-                                                        for j in newMarks[k]:
-                                                                newMarks[k][j] = marksList[x.index(j)]                                                
-
+                                                                        if mark == 'quit':
+                                                                                print(f"\t{RED}Can't quit midway. Enter marks for all subjects for at least the current assessment{WHITE}\n")
+                                                                        else:
+                                                                                mark = float(mark)
+                                                                                newMarks[k][assessments[i]] = mark
+                                                                                break
                                                         break
-                                                else:
-                                                        print("Invalid Input")
-                                        except ValueError or EOFError:
-                                                print("Invalid Input")
+                                                except ValueError:
+                                                        print("\tInvalid Input\n")
+                                                except EOFError:
+                                                        print("\tInvalid Input\n")
+
+                                        if exitLoop == True:
+                                                break
 
                 for i in newMarks:
                         for j in newMarks[i]:
@@ -494,36 +532,48 @@ def addNewStudent(jsonFileName: str):
                         print("\nThank you! Marks for all subjects for all assessments has been set of zero."
                         " You can edit them later!")
                 else:
-                        print("\nEnter the marks in the order: ")
-                        print(f"\n\t{YELLOW}[FA1, FA2, SA1, FA3, FA4, SA2]{WHITE}\n")
-                        print("Enter them in comma seperated values. [Eg: 100, 88, 95, 79, 81]")
-
-                        print(f"\nAny value greater than {YELLOW}100{WHITE} and less than {YELLOW}999{WHITE} will be made one tenth (Eg: {YELLOW}885{WHITE} will be converted to {YELLOW}88.5{WHITE})")
+                        print(f"\n\nAny value greater than {YELLOW}100{WHITE} and less than {YELLOW}999{WHITE} will be made one tenth (Eg: {YELLOW}885{WHITE} will be converted to {YELLOW}88.5{WHITE})")
                         print(f"Any value greater than {YELLOW}1000{WHITE} will be considered {YELLOW}100{WHITE}\n")
 
-                        print(f"{RED}Arbitrary values will throw you back to the input\n{WHITE}")
+                        print(f"{RED}Arbitrary values will throw you back to the input{WHITE}")
 
-                        for k in newMarks:
-                                while True:
-                                        try:
-                                                math = input(f"{k}: {YELLOW}")
-                                                print(f"{WHITE}", end="")
+                        for i in assessments:
+                                print(f"\n{i}:")
+                                
+                                for k in newMarks:
+                                        while True:
+                                                try:
+                                                        if k == list(newMarks.keys())[0]:
+                                                                mark = input(f"\t{k} (Enter {YELLOW}'QUIT'{WHITE} to quit marks input for all forthcoming assessments): {YELLOW}")
+                                                                print(f"{WHITE}", end="")
 
-                                                math.replace(" ","")
+                                                                if mark.lower() != 'quit':
+                                                                        mark = float(mark)
+                                                                        newMarks[k][assessments[i]] = mark
+                                                                elif mark.lower() == 'quit':
+                                                                        exitLoop = True
+                                                                        break
+                                                                else:
+                                                                        raise ValueError
+                                                        else:
+                                                                while True:
+                                                                        mark = input(f"\t{k}: {YELLOW}")
+                                                                        print(f"{WHITE}", end="")                                                
 
-                                                marksList = list(map(float, math.split(",")))
-
-                                                if len(marksList) == 6:
-                                                        x = list(newMarks[k].keys())
-
-                                                        for j in newMarks[k]:
-                                                                newMarks[k][j] = marksList[x.index(j)]                                                
-
+                                                                        if mark == 'quit':
+                                                                                print(f"\t{RED}Can't quit midway. Enter marks for all subjects for at least the current assessment{WHITE}\n")
+                                                                        else:
+                                                                                mark = float(mark)
+                                                                                newMarks[k][assessments[i]] = mark
+                                                                                break
                                                         break
-                                                else:
-                                                        print("Invalid Input")
-                                        except ValueError or EOFError:
-                                                print("Invalid Input")
+                                                except ValueError:
+                                                        print("\tInvalid Input\n")
+                                                except EOFError:
+                                                        print("\tInvalid Input\n")
+
+                                        if exitLoop == True:
+                                                break
 
                 for i in newMarks:
                         for j in newMarks[i]:

@@ -1,8 +1,10 @@
+# Last Edited: 30th March, 2025
+
 WHITE = "\033[38;2;212;212;212m"
-YELLOW = "\033[38;2;255;200;0m"
+YELLOW = "\033[38;2;255;200m"
+RED = "\033[38;2;200;0m"
+lb = "\033[38;2;108;180;238m"
 LIGHT_YELLOW = "\033[38;2;255;224;110m"
-RED = "\033[38;2;255;0;0m"
-lb = "\033[38;2;142;238;190m"
 
 B = "\033[1m"
 I = "\033[3m"
@@ -45,7 +47,7 @@ def info():
         print("\tThis project is provided \"as is,\" without warranties of any kind, express or\n\timplied. The author is not responsible for any issues, data loss, or unintended\n\tconsequences arising from its use.")
         print("")
         print(f"{B}Agreement:{R}")
-        print(f"\tBy using this project, you acknowledge and agree to these terms. Failure to comply\n\tmay result in consequences as deemed appropriate.")
+        print(f"\tBy using this project, you acknowledge and agree to these terms. Failure to comply\n\tmayresult in consequences as deemed appropriate.")
         print("")
         print(f"{'-'*90}")
         print("")

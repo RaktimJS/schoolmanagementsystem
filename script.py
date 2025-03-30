@@ -1,6 +1,6 @@
 # School Management System
 # Date Created: 05/03/2025
-# Last Edited: 22nd March, 2025
+# Last Edited: 30nd March, 2025
 
 
 
@@ -22,11 +22,12 @@ system('cls')
 
 
 
+
 try:
         DEL_LINE = "\033[A\033[K"
         WHITE = "\033[38;2;212;212;212m"
-        YELLOW = "\033[38;2;255;200;0m"
-        RED = "\033[38;2;200;0;0m"
+        YELLOW = "\033[38;2;255;200m"
+        RED = "\033[38;2;200;0m"
         lb = "\033[38;2;108;180;238m"
         LIGHT_YELLOW = "\033[38;2;255;224;110m"
 
@@ -47,7 +48,7 @@ try:
         with open("password.json", "r") as xyz:
                 pswrdDict = json.load(xyz)
 
-        if pswrdDict["isPswrdSet"] == False:
+        if pswrdDict["password"].strip() == "":
                 print("\n\nPassword must be at least 8 characters long")
                 print("Password must have alteast 1 upper case letter")
                 print(f"Password must have alteast 1 special symbol {YELLOW}(_, !, @, #, $, %, &){WHITE}")
@@ -77,7 +78,6 @@ try:
 
                                 if hasUpper == True and hasSpecialSymbol == True and hasDigit == True:
                                         pswrdDict["password"] = pswrd
-                                        pswrdDict["isPswrdSet"] = True
 
                                         with open("password.json", "w") as xyz:
                                                 json.dump(pswrdDict, xyz, indent = 8)

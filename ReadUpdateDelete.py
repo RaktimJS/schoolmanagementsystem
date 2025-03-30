@@ -17,7 +17,7 @@ TURN LINE WRAPPING OFF FOR A BETTER VIEW
 | Contains code for Read Update and Delete operations.              |
 +-------------------------------------------------------------------+
 
-Last Edited: 19th March, 2025
+Last Edited: 30th March, 2025
 
 """
 
@@ -26,9 +26,9 @@ Last Edited: 19th March, 2025
 
 DEL_LINE = "\033[A\033[K"
 WHITE = "\033[38;2;212;212;212m"
-YELLOW = "\033[38;2;255;200;0m"
-RED = "\033[38;2;200;0;0m"
-lb = "\033[38;2;142;238;190m"
+YELLOW = "\033[38;2;255;200m"
+RED = "\033[38;2;200;0m"
+lb = "\033[38;2;108;180;238m"
 
 __import__('os').system('cls')
 
