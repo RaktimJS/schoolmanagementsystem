@@ -7,6 +7,7 @@
 
 import time
 import json
+import functionControl
 
 from os import system
 from functionControl import ui
@@ -22,6 +23,8 @@ system('cls')
 
 
 
+
+breakAll = False
 
 try:
         DEL_LINE = "\033[A\033[K"
@@ -116,7 +119,7 @@ try:
                 system("cls")
 
                 while True:
-                        if continuationSelector == 'cls' or continuationSelector == '':
+                        if (continuationSelector == 'cls' or continuationSelector == ''):
                                 print(f"\n\n{B}School Manager V1.0{R}\n\n")
 
                                 print(f"Enter  {lb}1{WHITE} {LIGHT_YELLOW}→{WHITE} Access Grade  {YELLOW}1{WHITE}")
@@ -136,48 +139,91 @@ try:
                                 print(f"Enter {lb}14{WHITE} {LIGHT_YELLOW}→{WHITE} Change Password\n")
 
                                 print(f"\n{RED}Any exceeding values will be clipped to the closest limit{WHITE}\n")
+
+                                print(f"Type {YELLOW}QUIT{WHITE} to quit\n\n")
+
+
+
                         while True:
                                 try:
                                         listSelector = input(f"Enter your choice: {YELLOW}")
                                         print(WHITE, end="")
-                                        listSelector = int(listSelector)
-
-                                        if listSelector == 1:
-                                                ui("grade1.json")
-                                        elif listSelector == 2:
-                                                ui("grade2.json")
-                                        elif listSelector == 3:
-                                                ui("grade3.json")
-                                        elif listSelector == 4:
-                                                ui("grade4.json")
-                                        elif listSelector == 5:
-                                                ui("grade5.json")
-                                        elif listSelector == 6:
-                                                ui("grade6.json")
-                                        elif listSelector == 7:
-                                                ui("grade7.json")
-                                        elif listSelector == 8:
-                                                ui("grade8.json")
-                                        elif listSelector == 9:
-                                                ui("grade9.json")
-                                        elif listSelector == 10:
-                                                ui("grade10.json")
-                                        elif listSelector == 11:
-                                                ui("grade11.json")
-                                        elif listSelector == 12:
-                                                ui("grade12.json")
-                                        elif listSelector == 13:
-                                                info()
-                                        elif listSelector == 14:
-                                                updtPswrd()
-                                        elif listSelector < 1:
-                                                listSelector = 1
-                                                ui("grade1.json")
-                                        elif listSelector > 14:
-                                                listSelector = 14
-                                                updtPswrd
                                         
-                                        break
+                                        if listSelector.lower() != "quit":
+                                                listSelector = int(listSelector)
+
+                                                if listSelector == 1:
+                                                        ui("grade1.json")
+                                                        print(f"\n\n{'-'*70}\n\n")
+                                                        system("cls")
+                                                elif listSelector == 2:
+                                                        ui("grade2.json")
+                                                        print(f"\n\n{'-'*70}\n\n")
+                                                        system("cls")
+                                                elif listSelector == 3:
+                                                        ui("grade3.json")
+                                                        print(f"\n\n{'-'*70}\n\n")
+                                                        system("cls")
+                                                elif listSelector == 4:
+                                                        ui("grade4.json")
+                                                        print(f"\n\n{'-'*70}\n\n")
+                                                        system("cls")
+                                                elif listSelector == 5:
+                                                        ui("grade5.json")
+                                                        print(f"\n\n{'-'*70}\n\n")
+                                                        system("cls")
+                                                elif listSelector == 6:
+                                                        ui("grade6.json")
+                                                        print(f"\n\n{'-'*70}\n\n")
+                                                        system("cls")
+                                                elif listSelector == 7:
+                                                        ui("grade7.json")
+                                                        print(f"\n\n{'-'*70}\n\n")
+                                                        system("cls")
+                                                elif listSelector == 8:
+                                                        ui("grade8.json")
+                                                        print(f"\n\n{'-'*70}\n\n")
+                                                        system("cls")
+                                                elif listSelector == 9:
+                                                        ui("grade9.json")
+                                                        print(f"\n\n{'-'*70}\n\n")
+                                                        system("cls")
+                                                elif listSelector == 10:
+                                                        ui("grade10.json")
+                                                        print(f"\n\n{'-'*70}\n\n")
+                                                        system("cls")
+                                                elif listSelector == 11:
+                                                        ui("grade11.json")
+                                                        print(f"\n\n{'-'*70}\n\n")
+                                                        system("cls")
+                                                elif listSelector == 12:
+                                                        ui("grade12.json")
+                                                        print(f"\n\n{'-'*70}\n\n")
+                                                        system("cls")
+                                                elif listSelector == 13:
+                                                        info()
+                                                        print(f"\n\n{'-'*70}\n\n")
+                                                        system("cls")
+                                                elif listSelector == 14:
+                                                        updtPswrd()
+                                                        print(f"\n\n{'-'*70}\n\n")
+                                                        system("cls")
+                                                elif listSelector < 1:
+                                                        listSelector = 1
+                                                        ui("grade1.json")
+                                                        print(f"\n\n{'-'*70}\n\n")
+                                                        system("cls")
+                                                elif listSelector > 14:
+                                                        listSelector = 14
+                                                        updtPswrd
+                                                        print(f"\n\n{'-'*70}\n\n")
+                                                        system("cls")
+                                                
+                                                break
+                                        else:
+                                                functionControl.isQuitting = False
+                                                breakAll = True
+                                                break
                                 except ValueError:
                                         if not str(listSelector).strip():
                                                 print(f"{DEL_LINE}Enter your choice: {YELLOW}\033[3m*BLANK*\033[0m{WHITE}")
@@ -185,44 +231,8 @@ try:
                                         else:
                                                 print("Invalid Input\n")
 
-
-
-                        if listSelector != 13:
-                                print(f"\n\nType '{YELLOW}END{WHITE}' TO EXIT")
-                                print(f"Type '{YELLOW}CLS{WHITE}' to clear screen and continue")
-                                print(f"Hit the {YELLOW}ENTER KEY{WHITE} to continue without clearing screen")
-
-                                continuationSelector = input(f"\nEnter your choice: {YELLOW}")
-                                print(f"{WHITE}", end="")
-
-                                if continuationSelector.lower() == 'end':
-                                        for i in range (1, 4):
-                                                print(f"TERMINATING IN {YELLOW}{4 - i}{WHITE}")
-                                                timer(1)
-                                                print(DEL_LINE, end="")
-                                        system('cls')
-                                        break
-                                elif continuationSelector.lower() == 'cls':
-                                        for i in range (1, 4):
-                                                print(f"Continuing after clearing terminal in {YELLOW}{4 - i}{WHITE}")
-                                                timer(1)
-                                                print(DEL_LINE, end="")
-                                        
-                                        print("------------------------------------------------------------------------------\n\n\n")
-                                        system('cls')
-                                elif continuationSelector == '':
-                                        print(DEL_LINE, end="")
-                                        print(f"Enter your choice: {YELLOW}*BLANK*{WHITE}")
-                                        print(f"Continuing without clearing the screen")
-                                        print("------------------------------------------------------------------------------\n\n\n")
-                                        timer(3)        
-                                else:
-                                        for i in range (1, 4):
-                                                print(f"Invalid input. Terminating in {YELLOW}{4 - i}{WHITE}")
-                                                timer(1)
-                                                print(DEL_LINE, end="")
-                                        system('cls')
-                                        break
+                        if breakAll == True:
+                                break
         else:
                 print(f"{RED}Out of tries{WHITE}")
 except Exception as e:

@@ -150,7 +150,7 @@ def addNewStudent(jsonFileName: str):
                                 if newMarks[i][j] > 100 and newMarks[i][j] <= 999:
                                         newMarks[i][j] = newMarks[i][j]/10
                                 elif newMarks[i][j] >= 1000:
-                                        newMarks[i][j] = 100
+                                        newMarks[i][j] = float(100)
 
                 classData[f"stud{newStudNum}"] = {
                         "Roll_No": newStudNum,
@@ -257,7 +257,7 @@ def addNewStudent(jsonFileName: str):
                                 if newMarks[i][j] > 100 and newMarks[i][j] <= 999:
                                         newMarks[i][j] = newMarks[i][j]/10
                                 elif newMarks[i][j] >= 1000:
-                                        newMarks[i][j] = 100
+                                        newMarks[i][j] = float(100)
 
                 classData[f"stud{newStudNum}"] = {
                         "Roll_No": newStudNum,
@@ -395,7 +395,7 @@ def addNewStudent(jsonFileName: str):
                                 if newMarks[i][j] > 100 and newMarks[i][j] <= 999:
                                         newMarks[i][j] = newMarks[i][j]/10
                                 elif newMarks[i][j] >= 1000:
-                                        newMarks[i][j] = 100
+                                        newMarks[i][j] = float(100)
 
                 classData[f"stud{newStudNum}"] = {
                         "Roll_No": newStudNum,
@@ -580,7 +580,7 @@ def addNewStudent(jsonFileName: str):
                                 if newMarks[i][j] > 100 and newMarks[i][j] <= 999:
                                         newMarks[i][j] = newMarks[i][j]/10
                                 elif newMarks[i][j] >= 1000:
-                                        newMarks[i][j] = 100
+                                        newMarks[i][j] = float(100)
 
                 classData[f"stud{newStudNum}"] = {
                         "Roll_No": newStudNum,

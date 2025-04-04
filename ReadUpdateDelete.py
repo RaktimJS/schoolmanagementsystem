@@ -33,14 +33,15 @@ lb = "\033[38;2;108;180;238m"
 __import__('os').system('cls')
 
 from tabulate import tabulate
+
 import json
+from math import floor as floor 
 
 
 
 
 # Setup
 def loadJson(jsonFileName:str):
-        # jsonFileName = "gradesJSON/" + jsonFileName
         classData = None
         
         with open("gradesJSON/"+jsonFileName, "r") as existingData:
@@ -132,8 +133,8 @@ def printGradeData(jsonFileName: str, printPartial: bool = True, subject: str = 
                 if printPartial == False:
                         if subject.lower() == "all" or not subject.strip():
                                 if jsonData[j]["IsDeleted"] == 'False':
-                                        print(f"Name: {YELLOW}{jsonData[j]["Name"]}{WHITE}")
-                                        print(f"Roll Number: {YELLOW}{jsonData[j]["Roll_No"]}{WHITE}\n")
+                                        print(f"Roll Number {YELLOW}{jsonData[j]["Roll_No"]}{WHITE},", end=" ")
+                                        print(jsonData[j]["Name"])
 
                                         data = jsonData[j]["Subjects"]
 
@@ -145,8 +146,8 @@ def printGradeData(jsonFileName: str, printPartial: bool = True, subject: str = 
                                         print("\n\n")
                         elif subject in jsonData[j]["Subjects"]:
                                 if jsonData[j]["IsDeleted"] == 'False':
-                                        print(f"Name: {YELLOW}{jsonData[j]["Name"]}{WHITE}")
-                                        print(f"Roll Number: {YELLOW}{jsonData[j]["Roll_No"]}{WHITE}\n")
+                                        print(f"Roll Number {YELLOW}{jsonData[j]["Roll_No"]}{WHITE},", end=" ")
+                                        print(jsonData[j]["Name"])
 
                                         print(f"\t{subject} : \n\t\t", end="")
 
@@ -158,8 +159,8 @@ def printGradeData(jsonFileName: str, printPartial: bool = True, subject: str = 
                                 pass
                 else:
                         if jsonData[j]["IsDeleted"] == 'False':
-                                print(f"Name: {YELLOW}{jsonData[j]["Name"]}{WHITE}")
-                                print(f"Roll Number: {YELLOW}{jsonData[j]["Roll_No"]}{WHITE}\n")
+                                print(f"Roll Number {YELLOW}{jsonData[j]["Roll_No"]}{WHITE},", end=" ")
+                                print(jsonData[j]["Name"])
 
 
 # Read (R) ---- 2
@@ -168,8 +169,8 @@ def printSpecificStudent(jsonFileName:str, rollNumber: int):
 
         if rollNumber <= len(classData) and rollNumber > 0:
                 if classData[f"stud{rollNumber}"]["IsDeleted"] == "False":
-                        print(f"Name: {YELLOW}{classData[f"stud{rollNumber}"]["Name"]}{WHITE}")
-                        print(f"Roll Number: {YELLOW}{classData[f"stud{rollNumber}"]["Roll_No"]}{WHITE}\n")
+                        print(f"Roll Number {YELLOW}{classData[f"stud{rollNumber}"]["Roll_No"]}{WHITE},", end=" ")
+                        print(classData[f"stud{rollNumber}"]["Name"])
 
                         data = classData[f"stud{rollNumber}"]["Subjects"]
 
@@ -212,57 +213,76 @@ def updateName(jsonFileName: str, rollNumber: int, name: str):
 def updateMarks(jsonFileName: str, rollNumber: int):
         classData = loadJson(jsonFileName)
 
-        if rollNumber <= len(classData):
-                for key in classData:
-                        if classData[key]["Roll_No"] == rollNumber:
-                                studentKey = key
-                                break
-                
-                if classData[f"stud{rollNumber}"]["IsDeleted"] == "False" and studentKey:
+        while True:
+                if rollNumber <= len(classData):
+                        for key in classData:
+                                if classData[key]["Roll_No"] == rollNumber:
+                                        studentKey = key
+                                        break
+                        
+                        if classData[f"stud{rollNumber}"]["IsDeleted"] == "False" and studentKey:
+                                print()
+                                printSpecificStudent(jsonFileName, rollNumber)
 
-                        printSpecificStudent(jsonFileName, rollNumber)
+                                while True:
+                                        try:
+                                                subjectSelector = input(f"\n\nEnter the subject of which you want to update marks: {YELLOW}")
+                                                subjectSelector = subjectSelector.upper()
+                                                print(f"{WHITE}", end="")
 
-                        while True:
-                                try:
-                                        subjectSelector = input(f"Enter the subject of which you want to update marks: {YELLOW}")
-                                        subjectSelector = subjectSelector.upper()
-                                        print(f"{WHITE}", end="")
+                                                if subjectSelector in classData[studentKey]["Subjects"]:
+                                                        print("\n• Re-enter the old mark or leave the field blank to keep it unchanged")
+                                                        print("• Unsupported values will be trated as empty values")
+                                                        print("• Any value greater than 100 and less than 1000 will converted to the integer closest to its one-tenth")
+                                                        print("• Any value greater than or equal to 1000 converted to the 100\n\n")
 
-                                        if subjectSelector in classData[studentKey]["Subjects"]:
-                                                print("\n• Re-enter the old mark or leave the field blank to keep it unchanged")
-                                                print("• Unsupported values will be trated as empty values\n\n")
-                                                print(f"{lb}{subjectSelector}{WHITE}:")
+                                                        print(f"{lb}{subjectSelector}{WHITE}:")
 
-                                                # Editing the values
-                                                for i in classData[studentKey]["Subjects"][subjectSelector]:
-                                                        while True:
-                                                                try:
-                                                                        newMark = input(f"\t{i} (Current marks: {YELLOW}{classData[studentKey]["Subjects"][subjectSelector][i]}{WHITE}) {RED}:{YELLOW} ")
-                                                                        newMark = float(newMark)
-                                                                        print(f"{WHITE}", end="")
+                                                        for i in classData[studentKey]["Subjects"][subjectSelector]:
+                                                                while True:
+                                                                        try:
+                                                                                newMark = input(f"\t{i} (Current marks: {YELLOW}{classData[studentKey]["Subjects"][subjectSelector][i]}{WHITE}) {RED}:{YELLOW} ")
+                                                                                print(f"{WHITE}", end="")
 
-                                                                        classData[studentKey]["Subjects"][subjectSelector][i] = newMark
+                                                                                newMark = float(newMark)
 
-                                                                        break
-                                                                except ValueError:
-                                                                        print(f"{WHITE}{DEL_LINE}\t{i} (Current marks: {YELLOW}{classData[studentKey]["Subjects"][subjectSelector][i]}{WHITE}) {RED}: \033[3m{YELLOW}*{classData[studentKey]["Subjects"][subjectSelector][i]}*{WHITE}\033[0m")
+                                                                                if newMark >= 1000:
+                                                                                        print(DEL_LINE, end="")
+                                                                                        print(f"\t{i} (Current marks: {YELLOW}{classData[studentKey]["Subjects"][subjectSelector][i]}{WHITE}) {RED}: {YELLOW}\033[9m{newMark}\033[0m {YELLOW}100{WHITE}")
+                                                                                        newMark = int(100)
+                                                                                if newMark > 100 and newMark < 1000:
+                                                                                        print(f"{DEL_LINE}\t{i} (Current marks: {YELLOW}{classData[studentKey]["Subjects"][subjectSelector][i]}{WHITE}) {RED}: {YELLOW}\033[9m{newMark}\033[0m {YELLOW}{floor(newMark/10)}{WHITE}")
+                                                                                        newMark = float(f"{(newMark/10):.2f}")
 
-                                                with open("gradesJSON/"+jsonFileName, "w") as updatedData:
-                                                        json.dump(classData, updatedData, indent=8)
+                                                                                classData[studentKey]["Subjects"][subjectSelector][i] = newMark
 
-                                                break
-                                        elif not subjectSelector.strip():
-                                                print(f"{DEL_LINE}Enter the subject of which you want to update marks: {YELLOW}\033[3m*BLANK*\033[0m")
-                                                print(f"Can't process empty input. Please re-enter\n")
+                                                                                break
+                                                                        except ValueError:
+                                                                                print(f"{WHITE}{DEL_LINE}\t{i} (Current marks: {YELLOW}{classData[studentKey]["Subjects"][subjectSelector][i]}{WHITE}) {RED}: \033[3m{YELLOW}*{classData[studentKey]["Subjects"][subjectSelector][i]}*{WHITE}\033[0m")
+                                                                                break
+
+                                                        with open("gradesJSON/"+jsonFileName, "w") as updatedData:
+                                                                json.dump(classData, updatedData, indent=8)
+
+                                                        break
+                                                elif not subjectSelector.strip():
+                                                        print(f"{DEL_LINE}Enter the subject of which you want to update marks: {YELLOW}\033[3m*BLANK*\033[0m")
+                                                        print(f"Can't process empty input. Please re-enter\n")
+                                                else:
+                                                        print(f"Student has no subject named {lb}{subjectSelector}{WHITE}. Please recheck the spelling\n")
+                                        except EOFError or ValueError:
+                                                print("Invalid Input")
+                                        
+                                        continuation = input("Do you want to update marks for another subject? (Y/N) (Arbitrary values will be considered as 'N'): ")
+        
+                                        if continuation.lower() == "y":
+                                                pass
                                         else:
-                                                print(f"Student has no subject named {lb}{subjectSelector}{WHITE}. Please recheck the spelling\n")
-
-                                except EOFError or ValueError:
-                                        print("Invalid Input")
+                                                break
+                        else:
+                                print(f"Data of student with Roll Number {YELLOW}{rollNumber}{WHITE} is not available")
                 else:
-                        print(f"Data of student with Roll Number {YELLOW}{rollNumber}{WHITE} is not available")
-        else:
-                print(f"Student with Roll Number {YELLOW}{rollNumber}{WHITE} doesn't exist")
+                        print(f"Student with Roll Number {YELLOW}{rollNumber}{WHITE} doesn't exist")
 
 # Update (U) ---- 3
 def updatePassword():
