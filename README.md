@@ -1,6 +1,6 @@
 # Project Usage Agreement
 
-## Version 1.0, March 2025
+## March 2025
 
 ### Summary:
 You are permitted to use and share this project, provided that you credit the original author and do not modify or redistribute altered versions. No warranties are provided.
