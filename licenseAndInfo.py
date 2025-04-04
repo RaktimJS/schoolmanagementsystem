@@ -20,7 +20,7 @@ def info():
         
         print(f"{B}Project Usage Management{R}")
         print("")
-        print(f"Version 1.0, March 2025")
+        print(f"March 2025")
         print("")
         print(f"{B}Summary:{R}")
         print("You are permitted to use and share this project, provided that you credit the original\nauthor and do not modify or redistribute altered versions. No warranties are provided.")
