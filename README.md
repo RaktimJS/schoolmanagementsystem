@@ -1,6 +1,6 @@
 # Project Usage Agreement
 
-## March 2025
+## This agreement is effective from the date of publication and shall remain in force permanently.
 
 ### Summary:
 You are permitted to use and share this project, provided that you credit the original author and do not modify or redistribute altered versions. No warranties are provided.
