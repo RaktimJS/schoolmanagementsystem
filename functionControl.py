@@ -40,7 +40,7 @@ isQuitting = True
 
 
 def ui(jsonFileName: str):
-        # os.system('cls')
+        os.system('cls')
 
         print(f"\n\n{lb}CLASS {jsonFileName.split("grade")[1].split(".json")[0]}{WHITE}")
 
