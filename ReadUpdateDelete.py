@@ -35,7 +35,7 @@ __import__('os').system('cls')
 from tabulate import tabulate
 
 import json
-from math import floor as floor 
+from math import floor as floor
 
 
 
@@ -125,42 +125,53 @@ def printGradeData(jsonFileName: str, printPartial: bool = True, subject: str = 
         jsonData = loadJson(jsonFileName)
         subject = subject.upper()
 
+        breakAll = False
+
         if not jsonData:
                 print("No data to show")
                 return
 
         for j in jsonData:
-                if printPartial == False:
+                if printPartial == False and jsonData[j]["IsDeleted"] == 'False':
                         if subject.lower() == "all" or not subject.strip():
-                                if jsonData[j]["IsDeleted"] == 'False':
-                                        print(f"Roll Number {YELLOW}{jsonData[j]["Roll_No"]}{WHITE},", end=" ")
-                                        print(jsonData[j]["Name"])
-
-                                        data = jsonData[j]["Subjects"]
-
-                                        rows = [[key] + [f"{lb}{val}{WHITE}" for val in values.values()] for key, values in data.items()]
-                                        columns = ["Subjects"] + list(next(iter(data.values())).keys())
-                                        table = tabulate(rows, columns, tablefmt = "psql")
-
-                                        print(table)
-                                        print("\n\n")
-                        elif subject in jsonData[j]["Subjects"]:
-                                if jsonData[j]["IsDeleted"] == 'False':
-                                        print(f"Roll Number {YELLOW}{jsonData[j]["Roll_No"]}{WHITE},", end=" ")
-                                        print(jsonData[j]["Name"])
-
-                                        print(f"\t{subject} : \n\t\t", end="")
-
-                                        for k in jsonData[j]["Subjects"][subject]:
-                                                print(f"| {k}{RED} : {YELLOW}{jsonData[j]["Subjects"][subject][k]}{WHITE}", end=" ")
-
-                                        print("\n\n")
-                        else:
-                                pass
-                else:
-                        if jsonData[j]["IsDeleted"] == 'False':
                                 print(f"Roll Number {YELLOW}{jsonData[j]["Roll_No"]}{WHITE},", end=" ")
                                 print(jsonData[j]["Name"])
+
+                                data = jsonData[j]["Subjects"]
+
+                                rows = [[key] + [f"{lb}{val}{WHITE}" for val in values.values()] for key, values in data.items()]
+                                columns = ["Subjects"] + list(next(iter(data.values())).keys())
+                                table = tabulate(rows, columns, tablefmt = "psql")
+
+                                print(table)
+                                print("\n\n")
+
+                                breakAll = True
+                        elif subject in jsonData[j]["Subjects"]  or not subject.strip():
+                                print(f"Roll Number {YELLOW}{jsonData[j]["Roll_No"]}{WHITE},", end=" ")
+                                print(jsonData[j]["Name"])
+
+                                print(f"\t{subject} : \n\t\t", end="")
+
+                                for k in jsonData[j]["Subjects"][subject]:
+                                        print(f"| {k}{RED} : {YELLOW}{jsonData[j]["Subjects"][subject][k]}{WHITE}", end=" ")
+
+                                print("\n\n")
+
+                                breakAll = True
+                        elif subject not in jsonData[j]["Subjects"]:
+                                print(f"\n{YELLOW}{subject.upper()}{WHITE} is not a valid subject. Please recheck the word")
+                                input("Press enter to continue...")
+
+                                __import__('os').system('cls')
+
+                                break
+                else:
+                        if subject.lower() == "all" or not subject.strip():
+                                        print(f"Roll Number {YELLOW}{jsonData[j]["Roll_No"]}{WHITE},", end=" ")
+                                        print(jsonData[j]["Name"])
+
+
 
 
 # Read (R) ---- 2
@@ -211,6 +222,8 @@ def updateName(jsonFileName: str, rollNumber: int, name: str):
 
 # Update (U) ---- 2
 def updateMarks(jsonFileName: str, rollNumber: int):
+        breakLoop = True
+
         classData = loadJson(jsonFileName)
 
         while True:
@@ -255,8 +268,8 @@ def updateMarks(jsonFileName: str, rollNumber: int):
                                                                                         newMark = float(f"{(newMark/10):.2f}")
 
                                                                                 classData[studentKey]["Subjects"][subjectSelector][i] = newMark
-
                                                                                 break
+
                                                                         except ValueError:
                                                                                 print(f"{WHITE}{DEL_LINE}\t{i} (Current marks: {YELLOW}{classData[studentKey]["Subjects"][subjectSelector][i]}{WHITE}) {RED}: \033[3m{YELLOW}*{classData[studentKey]["Subjects"][subjectSelector][i]}*{WHITE}\033[0m")
                                                                                 break
@@ -264,7 +277,6 @@ def updateMarks(jsonFileName: str, rollNumber: int):
                                                         with open("gradesJSON/"+jsonFileName, "w") as updatedData:
                                                                 json.dump(classData, updatedData, indent=8)
 
-                                                        break
                                                 elif not subjectSelector.strip():
                                                         print(f"{DEL_LINE}Enter the subject of which you want to update marks: {YELLOW}\033[3m*BLANK*\033[0m")
                                                         print(f"Can't process empty input. Please re-enter\n")
@@ -273,12 +285,17 @@ def updateMarks(jsonFileName: str, rollNumber: int):
                                         except EOFError or ValueError:
                                                 print("Invalid Input")
                                         
-                                        continuation = input("Do you want to update marks for another subject? (Y/N) (Arbitrary values will be considered as 'N'): ")
+                                        continuation = input(f"\nDo you want to update marks for another subject? (Y/N) (Arbitrary values will be considered as 'N'): {YELLOW}")
+                                        print(WHITE, end="")
         
                                         if continuation.lower() == "y":
                                                 pass
                                         else:
+                                                breakLoop = True
                                                 break
+
+                                if breakLoop == True:
+                                        break
                         else:
                                 print(f"Data of student with Roll Number {YELLOW}{rollNumber}{WHITE} is not available")
                 else:

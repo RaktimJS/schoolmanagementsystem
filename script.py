@@ -7,10 +7,9 @@
 
 import time
 import json
-import functionControl
 
 from os import system
-from functionControl import ui
+from functionControl import ui, isQuitting as iq
 from licenseAndInfo import info
 from ReadUpdateDelete import updatePassword as updtPswrd
 
@@ -120,7 +119,7 @@ try:
 
                 while True:
                         if (continuationSelector == 'cls' or continuationSelector == ''):
-                                print(f"\n\n{B}School Manager V1.0{R}\n\n")
+                                print(f"\n\n{B}School Manager{R}\n\n")
 
                                 print(f"Enter  {lb}1{WHITE} {LIGHT_YELLOW}→{WHITE} Access Grade  {YELLOW}1{WHITE}")
                                 print(f"Enter  {lb}2{WHITE} {LIGHT_YELLOW}→{WHITE} Access Grade  {YELLOW}2{WHITE}")
@@ -221,7 +220,7 @@ try:
                                                 
                                                 break
                                         else:
-                                                functionControl.isQuitting = False
+                                                iq = False
                                                 breakAll = True
                                                 break
                                 except ValueError:

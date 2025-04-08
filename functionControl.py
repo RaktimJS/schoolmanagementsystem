@@ -42,9 +42,9 @@ isQuitting = True
 def ui(jsonFileName: str):
         os.system('cls')
 
-        print(f"\n\n{lb}CLASS {jsonFileName.split("grade")[1].split(".json")[0]}{WHITE}")
-
         while True:
+                print(f"\n\n{lb}CLASS {jsonFileName.split("grade")[1].split(".json")[0]}{WHITE}")
+
                 print(f"\n\n{'-'*90}\n\n")
 
                 print(f"Enter {YELLOW}1{WHITE} to SEE BASIC STUDENT DETAILS")
