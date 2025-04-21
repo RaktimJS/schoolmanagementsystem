@@ -192,8 +192,10 @@ def printSpecificStudent(jsonFileName:str, rollNumber: int):
                         print(table)
                 else:
                         print(f"Student with roll number {rollNumber} doesn't exist")
+                        break
         else:
                 print(f"Student with roll number {rollNumber} doesn't exist")
+                break
 
 
 """================================================================================"""
