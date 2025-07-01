@@ -29,14 +29,14 @@ I noticed that exam records of students in my school were being stored in log bo
 1. The whole process resulted in hundreds of log books.
 2. Log books were easily damageable.
 3. They were very space-consuming, and maintaining them was tedious.
-4. For a private school with a decent level of infrastructure, it felt pretty primitive that data was still being stored on paper — and that too in the 2020s.
+4. For a private school with a decent level of infrastructure, it felt pretty primitive that data was still being stored on paper - and that too in the 2020s.
 
 ___
 
 ## What was the development pipeline?
 
 1. This app has been made using Python from start to finish.
-2. It uses JSON files for structured data storage — one for each grade (grades 1 to 12).
+2. It uses JSON files for structured data storage - one for each grade (grades 1 to 12).
 3. Data handling is done using Python’s `json` module. Functions like `json.dump()` for writing data and `json.load()` for retrieving data have been used.
 4. For displaying stored data in a readable, tabular format, the `tabulate` module is used.
 5. To make the program modular and easier to debug or scale, it’s been broken down into several modules, each doing one (or a couple of) tasks.
@@ -45,7 +45,7 @@ ___
 
 ## What were the learnings?
 
-1. Learnt to use the `json` and `tabulate` modules — these aren’t a part of the standard CBSE CS syllabus.
+1. Learnt to use the `json` and `tabulate` modules - these aren’t a part of the standard CBSE CS syllabus.
 2. Understood the importance of software architecture and how that architecture impacts the overall user experience.
 3. Explored UI enhancements for CLI programs, including error handling and ANSI escape codes to make the experience more intuitive.
 4. Learned how to deliver a better user experience with clear feedback systems — and how UX is directly impacted by small UI decisions.
@@ -54,7 +54,7 @@ ___
 
 ## How to run the program?
 
-### __NOTE:__ All JSON files are already populated with placeholder data — used for testing and to help people understand the tool. Feel free to delete them if needed.
+### __NOTE:__ All JSON files are already populated with placeholder data - used for testing and to help people understand the tool. Feel free to delete them if needed.
 
 ### Requirements:
 - Python must be installed on your system.
@@ -62,7 +62,7 @@ ___
 
 The entry point of the program is the `script.py` file.
 
-If you're running it for the first time, it will begin with a password creation step. The password is stored in `password.json`. Yes, it’s not secure at all — but my goal was to learn how to build a password-protected system, not secure authentication (yet).
+If you're running it for the first time, it will begin with a password creation step. The password is stored in `password.json`. Yes, it’s not secure at all - but my goal was to learn how to build a password-protected system, not secure authentication (yet).
 
 Once the password is created/entered, the main menu will appear. You’ll see a list of grades; select one by typing its corresponding number.
 
