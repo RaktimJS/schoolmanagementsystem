@@ -1,6 +1,6 @@
 # School Management System
 # Date Created: 05/03/2025
-# Last Edited: 30nd March, 2025
+# Last Edited: 1st July, 2025
 
 
 
@@ -17,7 +17,7 @@ def timer(s):
                 time.sleep(1)
                 s -= 1
 
-system('cls')
+system("cls")
 
 
 
@@ -37,7 +37,7 @@ try:
 
         continuationSelector = ''
 
-        system('cls')
+        system("cls") if __import__("os").name == "nt" else system("clear")
 
         hasUpper = False
         hasSpecialSymbol = False
