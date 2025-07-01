@@ -89,9 +89,9 @@ ___
 
 ## Final note
 
-Feel free to drop a mail with your feedback.  
+Please drop a mail with your feedback.
 __I’d genuinely love it if anyone trying this app could share their thoughts.__
 
-Any kind of suggestions — feature updates, CLI enhancements, UX tweaks — are always welcome!
+Any kind of suggestions - feature updates, CLI enhancements, UX tweaks - are always welcome!
 
 Thanks in advance! 😄
