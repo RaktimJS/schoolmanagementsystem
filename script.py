@@ -134,8 +134,7 @@ try:
                                 print(f"Enter {lb}11{WHITE} {LIGHT_YELLOW}→{WHITE} Access Grade {YELLOW}11{WHITE}")
                                 print(f"Enter {lb}12{WHITE} {LIGHT_YELLOW}→{WHITE} Access Grade {YELLOW}12{WHITE}\n")
 
-                                print(f"Enter {lb}13{WHITE} {LIGHT_YELLOW}→{WHITE} See {YELLOW}LICENSE AND PROJECT INFO{WHITE}")
-                                print(f"Enter {lb}14{WHITE} {LIGHT_YELLOW}→{WHITE} Change Password\n")
+                                print(f"Enter {lb}13{WHITE} {LIGHT_YELLOW}→{WHITE} Change Password\n")
 
                                 print(f"\n{RED}Any exceeding values will be clipped to the closest limit{WHITE}\n")
 
@@ -200,10 +199,6 @@ try:
                                                         print(f"\n\n{'-'*70}\n\n")
                                                         system("cls")
                                                 elif listSelector == 13:
-                                                        info()
-                                                        print(f"\n\n{'-'*70}\n\n")
-                                                        system("cls")
-                                                elif listSelector == 14:
                                                         updtPswrd()
                                                         print(f"\n\n{'-'*70}\n\n")
                                                         system("cls")
@@ -212,8 +207,8 @@ try:
                                                         ui("grade1.json")
                                                         print(f"\n\n{'-'*70}\n\n")
                                                         system("cls")
-                                                elif listSelector > 14:
-                                                        listSelector = 14
+                                                elif listSelector > 13:
+                                                        listSelector = 13
                                                         updtPswrd
                                                         print(f"\n\n{'-'*70}\n\n")
                                                         system("cls")
