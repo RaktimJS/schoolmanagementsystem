@@ -10,11 +10,10 @@ import json
 
 from os import system
 from functionControl import ui, isQuitting as iq
-from licenseAndInfo import info
 from ReadUpdateDelete import updatePassword as updtPswrd
 
 def timer(s):
-        while s: 
+        while s:
                 time.sleep(1)
                 s -= 1
 
@@ -67,12 +66,12 @@ try:
                                         if i in "ABCDEFGHIJKLMNOPQRSTUVWXYZ" and hasUpper == False:
                                                 hasUpper = True
                                                 i = 0
-                                        
+
                                 for i in pswrd:
                                         if i in "_!@#$%&" and hasSpecialSymbol == False:
                                                 hasSpecialSymbol = True
                                                 i = 0
-                                        
+
                                 for i in pswrd:
                                         if i in "1234567890" and hasDigit == False:
                                                 hasDigit = True
@@ -146,7 +145,7 @@ try:
                                 try:
                                         listSelector = input(f"Enter your choice: {YELLOW}")
                                         print(WHITE, end="")
-                                        
+
                                         if listSelector.lower() != "quit":
                                                 listSelector = int(listSelector)
 
@@ -212,7 +211,7 @@ try:
                                                         updtPswrd
                                                         print(f"\n\n{'-'*70}\n\n")
                                                         system("cls")
-                                                
+
                                                 break
                                         else:
                                                 iq = False

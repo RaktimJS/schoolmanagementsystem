@@ -85,12 +85,12 @@ def addNewStudent(jsonFileName: str):
                         populateMarksBool = "n"
 
                 newMarks = {
-                        "Math": {"FA 1": 0, "FA 2": 0, "SA 1": 0, "FA 3": 0, "FA 4": 0, "SA 2": 0 },
+                        "MATH": {"FA 1": 0, "FA 2": 0, "SA 1": 0, "FA 3": 0, "FA 4": 0, "SA 2": 0 },
                         "EVS": {"FA 1": 0, "FA 2": 0, "SA 1": 0, "FA 3": 0, "FA 4": 0, "SA 2": 0 },
-                        "Lang1": {"FA 1": 0, "FA 2": 0, "SA 1": 0, "FA 3": 0, "FA 4": 0, "SA 2": 0 },
-                        "Lang2": {"FA 1": 0, "FA 2": 0, "SA 1": 0, "FA 3": 0, "FA 4": 0, "SA 2": 0 },
-                        "Lang3": {"FA 1": 0, "FA 2": 0, "SA 1": 0, "FA 3": 0, "FA 4": 0, "SA 2": 0 },
-                        "Computer": {"FA 1": 0, "FA 2": 0, "SA 1": 0, "FA 3": 0, "FA 4": 0, "SA 2": 0 },
+                        "LANG1": {"FA 1": 0, "FA 2": 0, "SA 1": 0, "FA 3": 0, "FA 4": 0, "SA 2": 0 },
+                        "LANG2": {"FA 1": 0, "FA 2": 0, "SA 1": 0, "FA 3": 0, "FA 4": 0, "SA 2": 0 },
+                        "LANG3": {"FA 1": 0, "FA 2": 0, "SA 1": 0, "FA 3": 0, "FA 4": 0, "SA 2": 0 },
+                        "COMPUTER": {"FA 1": 0, "FA 2": 0, "SA 1": 0, "FA 3": 0, "FA 4": 0, "SA 2": 0 },
                         "GK": {"FA 1": 0, "FA 2": 0, "SA 1": 0, "FA 3": 0, "FA 4": 0, "SA 2": 0 },
                 }
 
