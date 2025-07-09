@@ -60,7 +60,7 @@ ___
 - Python must be installed on your system.
 - Python's path should be added to your environment variables.
 
-The entry point of the program is the `script.py` file.
+#### __The entry point of the program is the `script.py` file.__
 
 If you're running it for the first time, it will begin with a password creation step. The password is stored in `password.json`. Yes, it’s not secure at all - but my goal was to learn how to build a password-protected system, not secure authentication (yet).
 
