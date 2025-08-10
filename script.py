@@ -8,6 +8,7 @@
 import time
 import json
 
+from hashlib import sha256
 from os import system
 from functionControl import ui, isQuitting as iq
 from ReadUpdateDelete import updatePassword as updtPswrd
@@ -78,6 +79,10 @@ try:
                                                 i = 0
 
                                 if hasUpper == True and hasSpecialSymbol == True and hasDigit == True:
+                                        pswrd = sha256(pswrd.encode('utf-8')).hexdigest()
+                                        pswrd = sha256(pswrd.encode('utf-8')).hexdigest()
+                                        pswrd = sha256(pswrd.encode('utf-8')).hexdigest()
+
                                         pswrdDict["password"] = pswrd
 
                                         with open("password.json", "w") as xyz:
@@ -99,6 +104,9 @@ try:
         else:
                 for i in range(3):
                         pswrd = input(f"Password (Attempt {i+1} of 3): {YELLOW}")
+                        pswrd = sha256(pswrd.encode('utf-8')).hexdigest()
+                        pswrd = sha256(pswrd.encode('utf-8')).hexdigest()
+                        pswrd = sha256(pswrd.encode('utf-8')).hexdigest()
                         print(f"{WHITE}", end="")
 
                         with open("password.json", "r") as xyz:
