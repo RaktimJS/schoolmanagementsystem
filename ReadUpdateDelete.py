@@ -125,51 +125,44 @@ def printGradeData(jsonFileName: str, printPartial: bool = True, subject: str = 
         jsonData = loadJson(jsonFileName)
         subject = subject.upper()
 
-        breakAll = False
-
         if not jsonData:
                 print("No data to show")
                 return
 
         for j in jsonData:
-                if printPartial == False and jsonData[j]["IsDeleted"] == 'False':
-                        if subject.lower() == "all" or not subject.strip():
-                                print(f"Roll Number {YELLOW}{jsonData[j]["Roll_No"]}{WHITE},", end=" ")
-                                print(jsonData[j]["Name"])
+                if not printPartial and jsonData[j]["IsDeleted"] == 'True':
+                        print(f"Roll Number {YELLOW}{jsonData[j]['Roll_No']}{WHITE},", end=" ")
+                        print(jsonData[j]["Name"], f"({RED}RECORD DELETED{WHITE})\n")
+                        continue
 
-                                data = jsonData[j]["Subjects"]
+                if subject.lower() == "all" or not subject.strip():
+                        print(f"Roll Number {YELLOW}{jsonData[j]['Roll_No']}{WHITE},", end=" ")
+                        print(jsonData[j]["Name"])
 
-                                rows = [[key] + [f"{lb}{val}{WHITE}" for val in values.values()] for key, values in data.items()]
-                                columns = ["Subjects"] + list(next(iter(data.values())).keys())
-                                table = tabulate(rows, columns, tablefmt = "psql")
+                        data = jsonData[j]["Subjects"]
+                        rows = [[key] + [f"{lb}{val}{WHITE}" for val in values.values()] 
+                               for key, values in data.items()]
+                        columns = ["Subjects"] + list(next(iter(data.values())).keys())
+                        table = tabulate(rows, columns, tablefmt = "psql")
 
-                                print(table)
-                                print("\n\n")
+                        print(table)
+                        print("\n\n")
+                elif subject in jsonData[j]["Subjects"]:
+                        print(f"Roll Number {YELLOW}{jsonData[j]['Roll_No']}{WHITE},", end=" ")
+                        print(jsonData[j]["Name"])
 
-                                breakAll = True
-                        elif subject in jsonData[j]["Subjects"] or not subject.strip():
-                                print(f"Roll Number {YELLOW}{jsonData[j]["Roll_No"]}{WHITE},", end=" ")
-                                print(jsonData[j]["Name"])
+                        print(f"\t{subject} : \n\t\t", end="")
 
-                                print(f"\t{subject} : \n\t\t", end="")
+                        for k in jsonData[j]["Subjects"][subject]:
+                                print(f"| {k}{RED} : {YELLOW}{jsonData[j]['Subjects'][subject][k]}{WHITE}", 
+                                      end=" ")
 
-                                for k in jsonData[j]["Subjects"][subject]:
-                                        print(f"| {k}{RED} : {YELLOW}{jsonData[j]["Subjects"][subject][k]}{WHITE}", end=" ")
-
-                                print("\n\n")
-
-                                breakAll = True
-                        elif subject not in jsonData[j]["Subjects"]:
-                                print(f"\n{YELLOW}{subject.upper()}{WHITE} is not a valid subject. Please recheck the word")
-                                input("Press enter to continue...")
-
-                                __import__('os').system('cls')
-
-                                break
-                else:
-                        if subject.lower() == "all" or not subject.strip():
-                                print(f"Roll Number {YELLOW}{jsonData[j]["Roll_No"]}{WHITE},", end=" ")
-                                print(jsonData[j]["Name"])
+                        print("\n\n")
+                elif subject not in jsonData[j]["Subjects"]:
+                        print(f"\n{YELLOW}{subject.upper()}{WHITE} is not a valid subject. Please recheck the word")
+                        input("Press enter to continue...")
+                        __import__('os').system('cls')
+                        break
 
 
 
