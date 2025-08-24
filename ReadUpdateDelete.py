@@ -147,7 +147,7 @@ def printGradeData(jsonFileName: str, printPartial: bool = True, subject: str = 
                                 print("\n\n")
 
                                 breakAll = True
-                        elif subject in jsonData[j]["Subjects"]  or not subject.strip():
+                        elif subject in jsonData[j]["Subjects"] or not subject.strip():
                                 print(f"Roll Number {YELLOW}{jsonData[j]["Roll_No"]}{WHITE},", end=" ")
                                 print(jsonData[j]["Name"])
 
@@ -168,8 +168,8 @@ def printGradeData(jsonFileName: str, printPartial: bool = True, subject: str = 
                                 break
                 else:
                         if subject.lower() == "all" or not subject.strip():
-                                        print(f"Roll Number {YELLOW}{jsonData[j]["Roll_No"]}{WHITE},", end=" ")
-                                        print(jsonData[j]["Name"])
+                                print(f"Roll Number {YELLOW}{jsonData[j]["Roll_No"]}{WHITE},", end=" ")
+                                print(jsonData[j]["Name"])
 
 
 
